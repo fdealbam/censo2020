@@ -628,10 +628,7 @@ card_v_hog_cens = dbc.Card(
           "fill" : "orange"},
 )
            
-  import dash
-import dash_html_components as html
-import dash_bootstrap_components as dbc
-import flask
+
 # identificadores
 
 FONT_AWESOME = "https://use.fontawesome.com/releases/v5.7.2/css/all.css"
