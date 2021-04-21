@@ -370,6 +370,43 @@ row5 = html.Tr([dbc.Alert("Con sanitario"), html.Td("5,132,288"),
                          "font-weight": 'bold',})])
 table_body = [html.Tbody([row1, row2, row3, row4,row5])]
 
+###########################################################################
+# Seccion 3a "Con internet "
+
+card2p3 = dbc.Card(
+    dbc.CardBody(
+        [
+         dbc.Button((["", html.H1(className="fas fa-male", style={"color": "#CFD8DC"}),
+                 html.H6(" Con televisor "),
+                 html.H1("97%"),
+                 #html.H6("1,625,420")                      
+        ])),
+
+         dbc.Button((["", html.H1(className="fas fa-male", style={"color": "#CFD8DC"}),
+                 html.H6(" Con computadora "),
+                 html.H1("97%"),
+                 #html.H6("1,625,420")                      
+        ])),
+            
+         dbc.Button((["", html.H1(className="fas fa-male", style={"color": "#CFD8DC"}),
+                 html.H6(" Con internet "),
+                 html.H1("97%"),
+                 #html.H6("1,625,420")                      
+        ])),
+
+         dbc.Button((["", html.H1(className="fas fa-male", style={"color": "#CFD8DC"}),
+                 html.H6(" Con celular "),
+                 html.H1("97%"),
+                 #html.H6("1,625,420")                      
+        ])),
+            
+     
+        ]), style={#'textAlign': 'center','color': 'black',
+                  #'FontColor': 120, 
+                   "border": "0",
+              "fill" : "transparent"})
+
+
 
 
 
