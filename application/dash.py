@@ -674,9 +674,7 @@ body = html.Div([
 
     dbc.Row(
      [
-        dbc.Col(dbc.Card(card2p3, color="green"#, outline=True,
-                         #inverse=False
-                        ),
+        dbc.Col(dbc.Card(card2p3, color="green"),
          sm={  "offset": 1, }),
          
          
