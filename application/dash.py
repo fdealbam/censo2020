@@ -1,3 +1,4 @@
+
 import dash
 import dash_bootstrap_components as dbc
 import dash_core_components as dcc
@@ -24,13 +25,17 @@ today = date.today()
 d2 = today.strftime("Fecha de actualización : %d-%m-%Y")
 
 pobsindh = 7804407
+
+
+
+
 ##########################################################################
 #Seccion 1. Variables de POBLACION
 ##########################################################################
 
 
 
-################################################################# Card
+#################################### Card
 
 card = dbc.Card(
     dbc.CardBody(
@@ -80,20 +85,6 @@ card = dbc.Card(
                          "font-weight": 'bold',
                         "color": "#00ACC1",}),
             
-#            dbc.Button(
-#                html.Span(["", html.H6(className="fas fa-window-minimize"),
-#                               html.H6(className="fas fa-window-minimize"),
-#                               html.H6(className="fas fa-window-minimize"),
-#                               html.H6(className="fas fa-window-minimize"),
-#                               html.H6(className="fas fa-window-minimize"),
-#                               html.H6(className="fas fa-window-minimize"),
-#                               html.H6(className="fas fa-window-minimize"),
-#                               html.H6(className="fas fa-window-minimize"),
-#                               html.H6(className="fas fa-window-minimize"),
-#                               html.H6(className="fas fa-window-minimize"),
-#                               html.H6(className="fas fa-window-minimize"),
-#                               html.H6(className="fas fa-window-minimize"),
-#                               html.H6(className="fas fa-window-minimize"),]),),
             html.Br(),
             html.P(
                 "Primaria incompleta "
@@ -117,20 +108,7 @@ card = dbc.Card(
                          "font-size": "48px",
                          "font-weight": 'bold',}),
             
-#            dbc.Button(
-#                html.Span(["", html.H6(className="fas fa-window-minimize", style={"color": "#039BE5"}),
-#                               html.H6(className="fas fa-window-minimize", style={"color": "#039BE5"}),
-#                               html.H6(className="fas fa-window-minimize", style={"color": "#039BE5"}),
-#                               html.H6(className="fas fa-window-minimize", style={"color": "#039BE5"}),
-#                               html.H6(className="fas fa-window-minimize", style={"color": "#039BE5"}),
-#                               html.H6(className="fas fa-window-minimize", style={"color": "#039BE5"}),
-#                               html.H6(className="fas fa-window-minimize", style={"color": "#039BE5"}),
-#                               html.H6(className="fas fa-window-minimize", style={"color": "#039BE5"}),
-#                               html.H6(className="fas fa-window-minimize", style={"color": "#039BE5"}),
-#                               html.H6(className="fas fa-window-minimize", style={"color": "#039BE5"}),
-#                               html.H6(className="fas fa-window-minimize", style={"color": "#039BE5"}),
-#                               html.H6(className="fas fa-window-minimize", style={"color": "#039BE5"}),
-#                               html.H6(className="fas fa-window-minimize", style={"color": "#039BE5"}),]),),
+
             html.Br(),
              html.P(
                 "Con discapacidad "
@@ -151,27 +129,25 @@ card = dbc.Card(
                          "color": "black",  
                          "font-size": "48px",
                          "font-weight": 'bold',}),
-#            dbc.Button(
-#                html.Span(["", html.H6(className="fas fa-window-minimize", style={"color": "#CFD8DC"}),
-#                               html.H6(className="fas fa-window-minimize", style={"color": "#CFD8DC"}),
-#                               html.H6(className="fas fa-window-minimize", style={"color": "#CFD8DC"}),
-#                               html.H6(className="fas fa-window-minimize", style={"color": "#CFD8DC"}),
-#                               html.H6(className="fas fa-window-minimize", style={"color": "#CFD8DC"}),
-#                               html.H6(className="fas fa-window-minimize", style={"color": "#CFD8DC"}),
-#                               html.H6(className="fas fa-window-minimize", style={"color": "#CFD8DC"}),
-#                               html.H6(className="fas fa-window-minimize", style={"color": "#CFD8DC"}),
-#                               html.H6(className="fas fa-window-minimize", style={"color": "#CFD8DC"}),
-#                               html.H6(className="fas fa-window-minimize", style={"color": "#CFD8DC"}),
-#                               html.H6(className="fas fa-window-minimize", style={"color": "#CFD8DC"}),
-#                               html.H6(className="fas fa-window-minimize", style={"color": "#CFD8DC"}),
-#                               html.H6(className="fas fa-window-minimize", style={"color": "#CFD8DC"}),]),)
+
         ]
     ),
     
     style={"width": "22.5rem", 
           "border": "0" },
 )
-################################################################# Card2
+
+
+
+
+
+##########################################################################
+#Seccion 2. Variables de vivienda
+##########################################################################
+
+#################################### Card2 HAY QUE AJUSTARLA CON....
+
+
 card2 = dbc.Card(
     dbc.CardBody(
         [
@@ -218,20 +194,6 @@ card2 = dbc.Card(
                          "color": "black",
                          "font-weight": 'bold',}),
             
-#            dbc.Button(
-#                html.Span(["", html.H6(className="fas fa-window-minimize"),
-#                               html.H6(className="fas fa-window-minimize"),
-#                               html.H6(className="fas fa-window-minimize"),
-#                               html.H6(className="fas fa-window-minimize"),
-#                               html.H6(className="fas fa-window-minimize"),
-#                               html.H6(className="fas fa-window-minimize"),
-#                               html.H6(className="fas fa-window-minimize"),
-#                               html.H6(className="fas fa-window-minimize"),
-#                               html.H6(className="fas fa-window-minimize"),
-#                               html.H6(className="fas fa-window-minimize"),
-#                               html.H6(className="fas fa-window-minimize"),
-#                               html.H6(className="fas fa-window-minimize"),
-#                               html.H6(className="fas fa-window-minimize"),]),),
             html.Br(),
             html.P(
                 "Primaria incompleta "
@@ -255,20 +217,7 @@ card2 = dbc.Card(
                          "font-size": "48px",
                          "font-weight": 'bold',}),
             
-#            dbc.Button(
-#                html.Span(["", html.H6(className="fas fa-window-minimize"),
-#                               html.H6(className="fas fa-window-minimize"),
-#                               html.H6(className="fas fa-window-minimize"),
-#                               html.H6(className="fas fa-window-minimize"),
-#                               html.H6(className="fas fa-window-minimize"),
-#                               html.H6(className="fas fa-window-minimize"),
-#                               html.H6(className="fas fa-window-minimize"),
-#                               html.H6(className="fas fa-window-minimize"),
-#                               html.H6(className="fas fa-window-minimize"),
-#                               html.H6(className="fas fa-window-minimize"),
-#                               html.H6(className="fas fa-window-minimize"),
-#                               html.H6(className="fas fa-window-minimize"),
-#                               html.H6(className="fas fa-window-minimize"),]),),
+
             html.Br(),
              html.P(
                 "Con discapacidad "
@@ -296,20 +245,7 @@ card2 = dbc.Card(
                          "color": "black",  
                          "font-size": "48px",
                          "font-weight": 'bold',}),
-#            dbc.Button(
-#                html.Span(["", html.H6(className="fas fa-window-minimize", style={"color": "#CFD8DC"}),
-#                               html.H6(className="fas fa-window-minimize", style={"color": "#CFD8DC"}),
-#                               html.H6(className="fas fa-window-minimize", style={"color": "#CFD8DC"}),
-#                               html.H6(className="fas fa-window-minimize", style={"color": "#CFD8DC"}),
-#                               html.H6(className="fas fa-window-minimize", style={"color": "#CFD8DC"}),
-#                               html.H6(className="fas fa-window-minimize", style={"color": "#CFD8DC"}),
-#                               html.H6(className="fas fa-window-minimize", style={"color": "#CFD8DC"}),
-#                               html.H6(className="fas fa-window-minimize", style={"color": "#CFD8DC"}),
-#                               html.H6(className="fas fa-window-minimize", style={"color": "#CFD8DC"}),
-#                               html.H6(className="fas fa-window-minimize", style={"color": "#CFD8DC"}),
-#                               html.H6(className="fas fa-window-minimize", style={"color": "#CFD8DC"}),
-#                               html.H6(className="fas fa-window-minimize", style={"color": "#CFD8DC"}),
-#                               html.H6(className="fas fa-window-minimize", style={"color": "#CFD8DC"}),]),)
+
         ]
     ),
     
@@ -317,8 +253,13 @@ card2 = dbc.Card(
           "border": "0",
           "fill" : "orange"},
 )
+
+
+
+
+
 ##########################################################################
-#Seccion 2. Variables de vivienda
+#Seccion 3. Variables de vivienda
 ##########################################################################
 
 
@@ -370,9 +311,38 @@ row5 = html.Tr([dbc.Alert("Con sanitario"), html.Td("5,132,288"),
                          "font-weight": 'bold',})])
 table_body = [html.Tbody([row1, row2, row3, row4,row5])]
 
-###########################################################################
-# Seccion 3a "Con internet "
 
+
+
+#################################### Card3
+card3 = dbc.Card(
+    dbc.CardBody(
+        [
+            html.P([dbc.Button([html.H1(className="fas fa-home"),
+            "  Variables de Vivienda"], 
+                    style={'textAlign': 'left',"color":"#eada79",
+                   #'FontColor': 220,
+                   "font-size": "40px",
+                          })]),
+            html.Br(),
+            
+     dbc.Table( table_body, bordered=False)
+                    ]
+        ), style={"width": "50rem", 
+          "border": "0",
+          "fill" : "orange"},
+        )
+           
+           
+
+
+
+##########################################################################
+#Seccion 4 Variables de INTERNET
+##########################################################################
+
+
+#################################### Card2p3
 card2p3 = dbc.Card(
     dbc.CardBody(
         [
@@ -407,38 +377,12 @@ card2p3 = dbc.Card(
               "fill" : "transparent"})
 
 
+        
 
 
-
-################################################################ Card 3
-card3 = dbc.Card(
-    dbc.CardBody(
-        [
-            dbc.Button(html.Span(["",html.H1(className="fas fa-home"),]),),
-            html.H4("Variables", 
-                    className="card-title",
-                    style={'textAlign': 'left',"color": "gray",
-                   'FontColor': 120}),
-            html.H5("de vivienda", 
-                    className="card-subtitle",
-                    style={'textAlign': 'left',"color": "black",
-                   'FontColor': 120}),
-            html.Br(),
-            html.Br(),
-            html.Br(),
-          
-            
-            dbc.Table( table_body, bordered=False)
-                    ]
-    ),
-    
-    style={"width": "50rem", 
-          "border": "0",
-          "fill" : "orange"},
-)
-           
-           
-######################################################### Migración
+##########################################################################
+#Seccion 5 Variables de MIGRACION
+##########################################################################
 
 row1 = html.Tr([
                 dbc.Alert([html.P(className="fas fa-male", style={"color": "#D500F9"}),
@@ -478,16 +422,20 @@ table_body = [html.Tbody([row1, row2, row3])]
 
 
 
+#################################### Card4
 card4 = dbc.Card(
     dbc.CardBody(
         [
-            html.P([dbc.Alert([html.P(className="fa fa-arrows-alt"),
-            "Variables"], 
-                    style={'textAlign': 'left',"color": "gray",
-                   'FontColor': 120}),
-            html.P("de Migración", 
-                    style={'textAlign': 'left',"color": "black",
-                   'FontColor': 120}),
+            html.P([dbc.Button([html.H1(className="fa fa-arrows-alt"),
+            #"    Variables de Migración"], 
+            #        style={'textAlign': 'left',"color": "gray",
+            #       'FontColor': 120}),
+            "  Variables de Migración"], 
+                    style={'textAlign': 'left',"color":"#D500F9",
+                   #'FontColor': 220,
+                   "font-size": "40px",
+                           
+                          }),
             
             dbc.Table(table_body, bordered=False)
          ])]),
@@ -495,7 +443,16 @@ card4 = dbc.Card(
             style={"width": "50rem", 
                   "border": "0",
                   "fill" : "orange"})
-######################################################### Educación
+
+         
+  
+
+
+    
+    
+##########################################################################
+#Seccion 6 Variables de EDUCACION
+##########################################################################
 
 row1 = html.Tr([
                 dbc.Alert([#html.P(className="fas fa-male", style={"color": "#D500F9"}),
@@ -527,18 +484,19 @@ table_body = [html.Tbody([row1, row2, row3])]
 
 
 
+#################################### card_v_edu
 card_v_edu = dbc.Card(
     dbc.CardBody(
         [
-            dbc.Button(html.Span(["",html.H1(className="fa fa-book"),]),),
-            html.H4("Variables", 
-                    className="card-title",
-                    style={'textAlign': 'left',"color": "gray",
-                   'FontColor': 120}),
-            html.H5("de Educación", 
-                    className="card-subtitle",
-                    style={'textAlign': 'left',"color": "black",
-                   'FontColor': 120}),
+            html.P([dbc.Button([html.H1(className="fa fa-book"),
+            "  Variables de Educación"], 
+                    style={'textAlign': 'left',"color":"#9dbf88",
+                   #'FontColor': 220,
+                   "font-size": "40px",
+                           
+                          })]),
+
+            html.Br(),
           
             
             dbc.Table( table_body, bordered=False)
@@ -550,7 +508,13 @@ card_v_edu = dbc.Card(
           "fill" : "orange"},
 )
            
-######################################################### Derechohabiencia
+    
+
+    
+    
+##########################################################################
+#Seccion 7. Variables de DERECHOHABIENCIA
+##########################################################################
 
 row1 = html.Tr([
                 dbc.Alert([#html.P(className="fas fa-male", style={"color": "#D500F9"}),
@@ -573,19 +537,22 @@ row2 = html.Tr([dbc.Alert([#html.P(className="fas fa-male", style={"color": "#D5
 table_body = [html.Tbody([row1, row2, ])]
 
 
-
+#################################### card_v_derechohab
 card_v_derechohab = dbc.Card(
     dbc.CardBody(
         [
-            dbc.Button(html.Span(["",html.H1(className="fa fa-medkit"),]),),
-            html.H4("Variables", 
-                    className="card-title",
-                    style={'textAlign': 'left',"color": "gray",
-                   'FontColor': 120}),
-            html.H5("de Derechohabiencia", 
-                    className="card-subtitle",
-                    style={'textAlign': 'left',"color": "black",
-                   'FontColor': 120}),
+            html.P([dbc.Button([html.H1(className="fa fa-medkit"),
+            #"    Variables de Migración"], 
+            #        style={'textAlign': 'left',"color": "gray",
+            #       'FontColor': 120}),
+            "  Variables de Derechohabiencia"], 
+                    style={'textAlign': 'left',"color":"#51c8e1",
+                   #'FontColor': 220,
+                   "font-size": "40px",
+                           
+                          })]),
+
+            html.Br(),
           
             
             dbc.Table( table_body, bordered=False)
@@ -597,7 +564,12 @@ card_v_derechohab = dbc.Card(
           "fill" : "orange"},
 )
            
-  ######################################################### Hogares Censales
+
+    
+    
+##########################################################################
+#Seccion 8. Variables de HOGARES CENSALES
+##########################################################################
 
 row1 = html.Tr([
                 dbc.Alert([html.P(className="fas fa-male", style={"color": "#D500F9"}),
@@ -639,23 +611,17 @@ table_body = [html.Tbody([row1, row2, row3, row4])]
 
 
 
-
-
-
+#################################### card_v_hog_cens
 card_v_hog_cens = dbc.Card(
     dbc.CardBody(
         [
-            dbc.Button(html.Span(["",html.H1(className="fa fa-child"),]),),
-            html.H4("Variables", 
-                    className="card-title",
-                    style={'textAlign': 'left',"color": "gray",
-                   'FontColor': 120}),
-            html.H5("Hogares censales", 
-                    className="card-subtitle",
-                    style={'textAlign': 'left',"color": "black",
-                   'FontColor': 120}),
-          
-            
+            html.P([dbc.Button([html.H1(className="fa fa-child"),
+            "  Variables de Hogares censales"], 
+                    style={'textAlign': 'left',"color":"#f0bdeb",
+                   #'FontColor': 220,
+                   "font-size": "40px",
+                          })]),
+            html.Br(),
             dbc.Table( table_body, bordered=False)
                     ]
     ),
@@ -665,6 +631,190 @@ card_v_hog_cens = dbc.Card(
           "fill" : "orange"},
 )
            
+
+    
+    
+    
+    
+##########################################################################
+#Seccion 9. Variables de DISCAPACIDAD
+##########################################################################
+
+row1 = html.Tr([
+                dbc.Alert([#html.P(className="fas fa-male", style={"color": "#D500F9"}),
+                           "    Religión católica"], color="warning"), 
+                html.Td("16,123,123"),#,style={'textAlign': 'bottom'}),
+                dbc.Alert("85%", 
+                        style={'textAlign': 'center',
+                         "color": "black",  
+                         "font-size": "30px",
+                         "font-weight": 'bold', })])
+
+row2 = html.Tr([dbc.Alert([#html.P(className="fas fa-male", style={"color": "#D500F9"}),
+                           "    Protestantes, Evangélicas y Otras"], color="warning"), 
+                html.Td("2,088,735"),
+                html.Td("7%",
+                        style={'textAlign': 'center',
+                         "color": "black",  
+                         "font-size": "30px",
+                         "font-weight": 'bold',})])
+table_body = [html.Tbody([row1, row2,])]
+
+
+
+#################################### card_v_discapacidad
+card_v_discapacidad = dbc.Card(
+    dbc.CardBody(
+        [
+ 
+            html.P([dbc.Button([html.H1(className="fa fa-wheelchai"),
+            #"    Variables de Migración"], 
+            #        style={'textAlign': 'left',"color": "gray",
+            #       'FontColor': 120}),
+            "  Variables de Discapacidad"], 
+                    style={'textAlign': 'left',"color":"#a58ca3",
+                   #'FontColor': 220,
+                   "font-size": "40px",
+                           
+                          })]),
+
+            html.Br(),
+            
+            dbc.Table( table_body, bordered=False)
+                    ]
+    ),
+    
+    style={"width": "50rem", 
+          "border": "0",
+          "fill" : "orange"},
+)
+
+
+##########################################################################
+#Seccion 10. Variables de ECONOMIA
+##########################################################################
+
+row1 = html.Tr([
+                dbc.Alert([#html.P(className="fas fa-male", style={"color": "#D500F9"}),
+                           "    Población ocupada"], color="warning"), 
+                html.Td("16,123,123"),#,style={'textAlign': 'bottom'}),
+                dbc.Alert("85%", 
+                        style={'textAlign': 'center',
+                         "color": "black",  
+                         "font-size": "30px",
+                         "font-weight": 'bold', })])
+
+row2 = html.Tr([dbc.Alert([#html.P(className="fas fa-male", style={"color": "#D500F9"}),
+                           "    Población masculina ocupada"], color="warning"), 
+                html.Td("2,088,735"),
+                html.Td("31%",
+                        style={'textAlign': 'center',
+                         "color": "black",  
+                         "font-size": "30px",
+                         "font-weight": 'bold',})])
+
+row3 = html.Tr([dbc.Alert([#html.P(className="fas fa-male", style={"color": "#D500F9"}),
+                           "    Población femenina ocupada"], color="warning"), 
+                html.Td("3,088,735"),
+                html.Td("40%",
+                        style={'textAlign': 'center',
+                         "color": "black",  
+                         "font-size": "30px",
+                         "font-weight": 'bold',})])
+
+row4 = html.Tr([dbc.Alert([#html.P(className="fas fa-male", style={"color": "#D500F9"}),
+                           "    12 años y más no económicamente activa estudiante"], color="warning"), 
+                html.Td("1,088,735"),
+                html.Td("32%",
+                        style={'textAlign': 'center',
+                         "color": "black",  
+                         "font-size": "30px",
+                         "font-weight": 'bold',})])
+
+table_body = [html.Tbody([row1, row2, row3, row4])]
+
+
+
+#################################### card_v_economia
+card_v_economia = dbc.Card(
+    dbc.CardBody(
+        [
+            html.P([dbc.Button([html.H1(className="fa fa-transgender-alt"),
+            "  Variables de Economía"], 
+                    style={'textAlign': 'left',"color":"#51c8e1",
+                   #'FontColor': 220,
+                   "font-size": "40px",
+                           
+                          })]),
+
+            html.Br(),
+            dbc.Table( table_body, bordered=False)
+                    ]
+    ),
+    
+    style={"width": "50rem", 
+          "border": "0",
+          "fill" : "orange"},
+)
+           
+
+    
+##########################################################################
+#Seccion 11. Variables de RELIGION
+##########################################################################
+
+row1 = html.Tr([
+                dbc.Alert([#html.P(className="fas fa-male", style={"color": "#D500F9"}),
+                           "    Religión católica"], color="warning"), 
+                html.Td("16,123,123"),#,style={'textAlign': 'bottom'}),
+                dbc.Alert("85%", 
+                        style={'textAlign': 'center',
+                         "color": "black",  
+                         "font-size": "30px",
+                         "font-weight": 'bold', })])
+
+row2 = html.Tr([dbc.Alert([#html.P(className="fas fa-male", style={"color": "#D500F9"}),
+                           "    Población derechohabiente del Seguro Popular o Seguro Médico para una Nueva Generación"], color="warning"), 
+                html.Td("2,088,735"),
+                html.Td("31%",
+                        style={'textAlign': 'center',
+                         "color": "black",  
+                         "font-size": "30px",
+                         "font-weight": 'bold',})])
+table_body = [html.Tbody([row1, row2, ])]
+
+
+
+
+#################################### card_v_religion
+card_v_religion = dbc.Card(
+    dbc.CardBody(
+        [
+            html.P([dbc.Button([html.H1(className="fa fa-transgender-alt"),
+            "  Variables de Religión"], 
+                    style={'textAlign': 'left',"color":"#51c8e1",
+                   "font-size": "40px",
+                           
+                          })]),
+
+            html.Br(),
+            dbc.Table( table_body, bordered=False)
+                    ]
+    ),
+    
+    style={"width": "50rem", 
+          "border": "0",
+          "fill" : "orange"},
+)
+           
+
+    
+    
+##########################################################################
+# A P P 
+##########################################################################
+
+
 
 # identificadores
 
@@ -684,106 +834,135 @@ body = html.Div([
         ], justify="center"),
 
     
-    # SECCION 1 VARIABLES DE POBLACION ###################################
-    dbc.Row(
-     [
+    ################## SECCION 1 (pag1)_VARIABLES DE POBLACION
+    dbc.Row([
         dbc.Col(dbc.Card(card, color="gray", inverse=True,  ),
          sm={  "offset": 1, }),
         dbc.Col(dbc.Card(card2, color="gray", inverse=True,  ),
          sm={  "offset": 1, }),
-      
          
      ], no_gutters= True, justify= "start",
      className="blockquote",
      ),
-    dbc.Row(
-     [
+    
+
+    
+    ################## SECCION 2 (pag1)_VARIABLES DE VIVIENDA
+    dbc.Row([
         dbc.Col(dbc.Card(card3, color="white", inverse=True,  ),
          sm={  "offset": 1, }),
-       
-      
          
      ], no_gutters= True, justify= "start",
      className="blockquote",
      ),
 
-    # SECCION 4 CON INTERNET ###########    
-
-    dbc.Row(
-     [
-        dbc.Col(dbc.Card(card2p3, color="green"),
-         sm={  "offset": 1, }),
-         
-         
-     ], no_gutters= True, justify= "start",
-     className="blockquote",
-     ),
-    
-    html.Br(),
-    html.Br(),
-    html.Br(),
 
     
-    # SECCION 4  ###########    
-    dbc.Row(
-     [
-        dbc.Col(dbc.Card(card4, #color="#FBFBFB", outline=True,
+    ################## SECCION 4 (pag1)_VARIABLES DE INTERNET
+
+    dbc.Row([
+        dbc.Col(dbc.Card(card2p3, color="green"#, outline=True,
                          #inverse=False
                         ),
          sm={  "offset": 1, }),
+    
+     ], no_gutters= True, justify= "start",
+     className="blockquote",
+     ),
+    html.Br(),
+    
+
+    
+    ################## SECCION 5 (pag1)__VARIABLES DE MIGRACION
+    dbc.Row([
+        dbc.Col(dbc.Card(card4),
+         sm={"size": 9,  "offset": 1, }),
+         
+     ], no_gutters= True, justify= "start",
+     className="blockquote",
+     ),
+
+    
+    
+    #############################>>>>>>> II <<<<<<<<<#############################
+    
+    ################## SECCION 1 (pag 2)__VARIABLES DE DISCAPACIDAD
+    dbc.Row([
+        dbc.Col(dbc.Card(card_v_discapacidad, #color="#FBFBFB", outline=True,
+                         #inverse=False
+                        ),
+         sm={"size": 9,  "offset": 1, }),
+         
+     ], no_gutters= True, justify= "start",
+     className="blockquote",
+     ),
+
+    
+    ################## SECCION 2 (pag 2)__VARIABLES DE ECONOMIA
+    dbc.Row(
+     [
+        dbc.Col(dbc.Card(card_v_economia, #color="#FBFBFB", outline=True,
+                         #inverse=False
+                        ),
+         sm={"size": 9,  "offset": 1, }),
          
          
      ], no_gutters= True, justify= "start",
      className="blockquote",
      ),
+
     
-    # SECCION 1 (3a pag)  ###########    
-    dbc.Row(
-     [
+    ################## SECCION 3 (pag 2)__VARIABLES DE RELIGION
+    dbc.Row([
+        dbc.Col(dbc.Card(card_v_religion, #color="#FBFBFB", outline=True,
+                         #inverse=False
+                        ),
+         sm={"size": 9,  "offset": 1, }),
+     ], no_gutters= True, justify= "start",
+     className="blockquote",
+     ),
+    
+    
+    #############################>>>>>>> III <<<<<<<<<#############################
+    
+    ################## SECCION 1 (3a pag)__VARIABLES DE EDUCACION      
+    dbc.Row([
         dbc.Col(dbc.Card(card_v_edu, #color="#FBFBFB", outline=True,
                          #inverse=False
                         ),
          sm={  "offset": 1, }),
-         
-         
      ], no_gutters= True, justify= "start",
      className="blockquote",
      ),
     
-    # SECCION 2 (3a pag)  ###########    
-    dbc.Row(
-     [
+    
+    ################## SECCION 2 (3a pag)__VARIABLES DE DERECHOHABIENCIA
+    dbc.Row([
         dbc.Col(dbc.Card(card_v_derechohab, #color="#FBFBFB", outline=True,
                          #inverse=False
                         ),
          sm={  "offset": 1, }),
-         
-         
      ], no_gutters= True, justify= "start",
      className="blockquote",
      ),
     
-    # SECCION 3 (3a pag)  ###########    
-    dbc.Row(
-     [
+    ################## SECCION 3 (3a pag)__VARIABLES DE HOGARES CENSALES 
+    dbc.Row([
         dbc.Col(dbc.Card(card_v_hog_cens, #color="#FBFBFB", outline=True,
                          #inverse=False
                         ),
          sm={  "offset": 1, }),
-         
-         
      ], no_gutters= True, justify= "start",
      className="blockquote",
      ),
-    
-
     
          ])
     
 app.layout = html.Div([body])
 
-from application.dash import app
-from settings import config
+#from application.dash import app
+#from settings import config
 
 if __name__ == "__main__":
-    app.run_server()
+    app.run_server()    
+
