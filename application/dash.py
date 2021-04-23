@@ -43,7 +43,7 @@ card = dbc.Card(
             html.H6("Variables", 
                     className="card-title",
                     style={'textAlign': 'left',"color": "gray"}),
-            html.H3("de población", 
+            html.H2("de población", 
                     className="card-subtitle",
                     style={'textAlign': 'left',"color": "black", "font-weight": 'bold'}),
             html.Br(),
@@ -52,29 +52,26 @@ card = dbc.Card(
           
             html.P(
                 "Sin derechohabiencia "
-              "7,804,407",
+              "  7,804,407",
                 className="card-text",
                 style={'textAlign': 'left',"color": "black",
-                   'FontColor': 120
+                   #'FontColor': 120
                       }
             ),
 
             
             
             dbc.Button(
-                html.Span(["", html.H1(className="fas fa-male", style={"color": "#00ACC1"}),
-                               html.H1(className="fas fa-male", style={"color": "#00ACC1"}),
-                               html.H1(className="fas fa-male", style={"color": "#00ACC1"}),
-                               html.H1(className="fas fa-male", style={"color": "#00ACC1"}),
-                               html.H1(className="fas fa-male", style={"color": "#00ACC1"}),
-                               html.H1(className="fas fa-male", style={"color": "#00ACC1"}),
-                               html.H1(className="fas fa-male", style={"color": "#00ACC1"}),
-                               html.H1(className="fas fa-male", style={"color": "#00ACC1"}),
-                               html.H1(className="fas fa-male", style={"color": "#00ACC1"}),
-                               html.H1(className="fas fa-male", style={"color": "#00ACC1"}),
-                               html.H1(className="fas fa-male", style={"color": "#00ACC1"}),
-                               html.H1(className="fas fa-male", style={"color": "#00ACC1"}),
-                               html.H1(className="fas fa-male", style={"color": "#00ACC1"}),]),),
+                html.Span(["", html.H1(className="fas fa-male", style={"color": "#FFD180"}),
+                               html.H1(className="fas fa-male", style={"color": "#FFD180"}),
+                               html.H1(className="fas fa-male", style={"color": "#FFD180"}),
+                               html.H1(className="fas fa-male", style={"color": "#FFD180"}),
+                               html.H1(className="fas fa-male", style={"color": "#E0E0E0"}),
+                               html.H1(className="fas fa-male", style={"color": "#E0E0E0"}),
+                               html.H1(className="fas fa-male", style={"color": "#E0E0E0"}),
+                               html.H1(className="fas fa-male", style={"color": "#E0E0E0"}),
+                               html.H1(className="fas fa-male", style={"color": "#E0E0E0"}),
+                               html.H1(className="fas fa-male", style={"color": "#E0E0E0"}),]),),
             html.Br(),
             
             html.P("42%", 
@@ -83,23 +80,22 @@ card = dbc.Card(
                          "color": "black",  
                          "font-size": "48px",
                          "font-weight": 'bold',
-                        "color": "#00ACC1",}),
+                        "color": "dark",}),
             
             html.Br(),
             html.P(
                 "Primaria incompleta "
-              "3,829,453",
+              "  3,829,453",
                 className="card-text",
                 style={'textAlign': 'left',"color": "black",
                    'FontColor': 120}
             ),
             dbc.Button(
-                html.Span(["", html.H1(className="fas fa-user-graduate", style={"color": "#B388FF"}),
-                               html.H1(className="fas fa-user-graduate", style={"color": "#B388FF"}),
-                               html.H1(className="fas fa-user-graduate", style={"color": "#B388FF"}),
-                               html.H1(className="fas fa-user-graduate", style={"color": "#B388FF"}),
-                               html.H1(className="fas fa-user-graduate", style={"color": "#B388FF"}),
-                               html.H1(className="fas fa-user-graduate", style={"color": "#B388FF"}),
+                html.Span(["", html.H1(className="fas fa-user-graduate", style={"color": "#FFD180"}),
+                               html.H1(className="fas fa-user-graduate", style={"color": "#FFD180"}),
+                               html.H1(className="fas fa-user-graduate", style={"color": "#E0E0E0"}),
+                               html.H1(className="fas fa-user-graduate", style={"color": "#E0E0E0"}),
+                               html.H1(className="fas fa-user-graduate", style={"color": "#E0E0E0"}),
                           ]),),
             html.P("30%", 
                   className="card-text",
@@ -112,17 +108,17 @@ card = dbc.Card(
             html.Br(),
              html.P(
                 "Con discapacidad "
-              "782,953",
+              "  782,953",
                 className="card-text",
                 style={'textAlign': 'left',"color": "black",
                    'FontColor': 120}
             ),
             dbc.Button(
-                html.Span(["", html.H1(className="fas fa-wheelchair", style={"color": "#DD2C00"}),
-                               html.H1(className="fas fa-wheelchair", style={"color": "#DD2C00"}),
-                               html.H1(className="fas fa-wheelchair", style={"color": "#DD2C00"}),
-                               html.H1(className="fas fa-wheelchair", style={"color": "#DD2C00"}),
-                               html.H1(className="fas fa-wheelchair", style={"color": "#DD2C00"}),]),),
+                html.Span(["", html.H1(className="fas fa-wheelchair", style={"color": "#FFD180"}),
+                               html.H1(className="fas fa-wheelchair", style={"color": "#E0E0E0"}),
+                               html.H1(className="fas fa-wheelchair", style={"color": "#E0E0E0"}),
+                               html.H1(className="fas fa-wheelchair", style={"color": "#E0E0E0"}),
+                               html.H1(className="fas fa-wheelchair", style={"color": "#E0E0E0"}),]),),
              html.P("4%", 
                   className="card-text",
                   style={'textAlign': 'right',
@@ -151,56 +147,105 @@ card = dbc.Card(
 card2 = dbc.Card(
     dbc.CardBody(
         [
-            html.H6("Variables", 
-                    className="card-title",
-                    style={'textAlign': 'left',"color": "gray",
-                   'FontColor': 120}),
-            html.H3("de población", 
-                    className="card-subtitle",
-                    style={'textAlign': 'left',"color": "black",
-                   'FontColor': 120}),
+            html.H6("Población total", 
+                    style={'textAlign': 'left',
+                           "color": "white",
+                          "background-color": "orange"}),
+            html.H3("20,116,842", 
+                    style={'textAlign': 'left',
+                           "color": "white",
+                          "background-color": "orange"}),
             html.Br(),
-            html.Br(),
-            html.Br(),
+     #     button_group = dbc.ButtonGroup(
+    #[dbc.Button("Left"), dbc.Button("Middle"), dbc.Button("Right")]
+#)
           
-            html.P(
-                "Sin derechohabiencia "
-              "7,804,407",
-                className="card-text",
-                style={'textAlign': 'left',"color": "black",
-                   'FontColor': 120
-                      }
-            ),
-            dbc.Button(
-                html.Span(["", html.H1(className="fas fa-male"),
-                               html.H1(className="fas fa-male"),
-                               html.H1(className="fas fa-male"),
-                               html.H1(className="fas fa-male"),
-                               html.H1(className="fas fa-male"),
-                               html.H1(className="fas fa-male"),
-                               html.H1(className="fas fa-male"),
-                               html.H1(className="fas fa-male"),
-                               html.H1(className="fas fa-male"),
-                               html.H1(className="fas fa-male"),
-                               html.H1(className="fas fa-male"),
-                               html.H1(className="fas fa-male"),
-                               html.H1(className="fas fa-male"),]),),
-            html.Br(),
-            html.P("42%", 
+            dbc.ButtonGroup(
+                html.Span(["", html.H1(className="fas fa-male", style={"background-color": "orange","color":"white"}),
+                               html.H1(className="fas fa-male", style={"background-color": "orange","color":"white"}),
+                               html.H1(className="fas fa-male", style={"background-color": "orange","color":"white"}),
+                               html.H1(className="fas fa-male", style={"background-color": "orange","color":"white"}),
+                               html.H1(className="fas fa-male", style={"background-color": "orange","color":"white"}),
+                               html.H1(className="fas fa-male", style={"background-color": "orange","color":"white"}),
+                               html.H1(className="fas fa-male", style={"background-color": "orange","color":"white"}),
+                               html.H1(className="fas fa-male", style={"background-color": "orange","color":"white"}),
+                               html.H1(className="fas fa-male", style={"background-color": "orange","color":"white"}),
+                               html.H1(className="fas fa-male", style={"background-color": "orange","color":"white"}),
+                               html.H1(className="fas fa-male", style={"background-color": "orange","color":"white"}),
+                               html.H1(className="fas fa-male", style={"background-color": "orange","color":"white"}),
+                               html.H1(className="fas fa-male", style={"background-color": "orange","color":"white"}),]),),
+            
+        ]
+    ),
+    
+    style={"width": "25.5rem", 
+          "border": "0",
+          "background-color": "orange"
+          },
+)
+
+
+
+card2a = dbc.Card(
+    dbc.CardBody(
+        [
+            html.H6("Población de 18 años y más", 
+                    style={'textAlign': 'left',
+                           "color": "white",
+                          "background-color": "#0097A7"}),
+            html.H5("13,660,403", 
+                    style={'textAlign': 'left',
+                           "color": "white",
+                          "background-color": "#0097A7"}),
+            html.H5("64%", 
                   className="card-text",
                   style={'textAlign': 'right',
-                         "color": "black",  
-                         "font-size": "48px",
-                         "color": "black",
-                         "font-weight": 'bold',}),
-            
-            html.Br(),
+                         "color": "white",  
+                         "font-size": "38px",
+                         })]), style={"width": "25.5rem", 
+                                      "border": "0",
+                                      "background-color": "#0097A7",
+           
+          },
+)
+
+
+card2aa = dbc.Card(
+    dbc.CardBody(
+        [
+            html.H6("Población de 18 años y más", 
+                    style={'textAlign': 'left',
+                           "color": "white",
+                          "background-color": "#B2DFDB"}),
+            html.H5("13,660,403", 
+                    style={'textAlign': 'left',
+                           "color": "white",
+                          "background-color": "#B2DFDB"}),
+            html.H5("64%", 
+                  className="card-text",
+                  style={'textAlign': 'right',
+                         "color": "white",  
+                         "font-size": "38px",
+                         })]), style={"width": "25.5rem", 
+                                      "border": "0",
+                                      "background-color": "#B2DFDB",
+           
+          },
+)
+
+
+
+
+card2b = dbc.Card(
+    dbc.CardBody(
+        [
             html.P(
                 "Primaria incompleta "
               "3,829,453",
                 className="card-text",
                 style={'textAlign': 'left',"color": "black",
-                   'FontColor': 120}
+                   #'FontColor': 120
+                      }
             ),
             dbc.Button(
                 html.Span(["", html.H1(className="fas fa-user-graduate", style={"color": "#B9F6CA"}),
@@ -806,11 +851,8 @@ card_v_religion = dbc.Card(
           "border": "0",
           "fill" : "orange"},
 )
-           
-
-    
-    
-##########################################################################
+     
+    ##########################################################################
 # A P P 
 ##########################################################################
 
@@ -826,29 +868,59 @@ body = html.Div([
 
     html.Br(),
     html.Br(),
-    dbc.Row(
-        [
-        dbc.Col(html.H1(" ",
-             style={"size":  "auto",  "offset": 3, })),
-        
-        ], justify="center"),
+    
 
     
     ################## SECCION 1 (pag1)_VARIABLES DE POBLACION
     dbc.Row([
-        dbc.Col(dbc.Card(card, color="gray", inverse=True,  ),
-         sm={  "offset": 1, }),
-        dbc.Col(dbc.Card(card2, color="gray", inverse=True,  ),
-         sm={  "offset": 1, }),
-         
-     ], no_gutters= True, justify= "start",
-     className="blockquote",
-     ),
+        dbc.Col(dbc.Card(card)),
+        dbc.Col(dbc.Card(card2),                      #población total
+               style={#'margin-top': '-540px',       #arriba
+                      'margin-left': '-205px', 
+               #       'width': '479px',
+               #       'height': '100%',
+               })
+     ], className="blockquote"),
     
+    dbc.Row([
+        dbc.Col(dbc.Card(card2a),
+                style={'margin-top': '-628px', #arriba
+                       'margin-left': '467px', 
+                       'width': '382px',
+                       'height': '379px',})
+    ]),
 
+     dbc.Row([
+       dbc.Col(dbc.Card(card2aa),
+               style={'margin-top': '-473px', #arriba
+                      'margin-left': '467px', 
+                      'width': '382px',
+                      'height': '50%',
+                     })
+    ]),
+
+    dbc.Row([
+        dbc.Col(dbc.Card(card2a),
+                style={'margin-top': '-318px', #arriba
+                       'margin-left': '467px', 
+                       'width': '382px',
+                       'height': '379px',})
+    ]),
+
+     dbc.Row([
+       dbc.Col(dbc.Card(card2aa),
+               style={'margin-top': '-222px', #arriba
+                      'margin-left': '467px', 
+                      'width': '382px',
+                      'height': '50%',
+                     })
+    ]),
+    
+    
     
     ################## SECCION 2 (pag1)_VARIABLES DE VIVIENDA
     dbc.Row([
+        
         dbc.Col(dbc.Card(card3, color="white", inverse=True,  ),
          sm={  "offset": 1, }),
          
@@ -959,10 +1031,7 @@ body = html.Div([
          ])
     
 app.layout = html.Div([body])
+#app.layout = html.Div(children=[html.Img(className='icon')])
 
-from application.dash import app
-from settings import config
-
-if __name__ == "__main__":
-    app.run_server()    
-
+if __name__ == '__main__':
+    app.run_server(use_reloader = False)
