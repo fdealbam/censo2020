@@ -309,13 +309,14 @@ card2b = dbc.Card(
 
 
 
+## Tabla de variables
 row1 = html.Tr([dbc.Alert("Con sanitario y con agua"), 
                 html.Td("19,172,575"),#,style={'textAlign': 'bottom'}),
                 dbc.Alert("94%", color="light",
                         style={#'textAlign': 'up', 
                          #"height": "10px",
                          #"color": "light",  
-                         "font-size": "40px",
+                         "font-size": "30px",
                          #"font-weight": 'bold',
                         })])
 
@@ -363,21 +364,39 @@ table_body = [html.Tbody([row1, row2, row3, row4,row5])]
 card3 = dbc.Card(
     dbc.CardBody(
         [
-            html.P([dbc.Button([html.H1(className="fas fa-home"),
-            "  Variables de Vivienda"], 
-                    style={'textAlign': 'left',"color":"#eada79",
-                   #'FontColor': 220,
-                   "font-size": "40px",
-                          })]),
-            html.Br(),
+            html.H6("Variables", 
+                    className="card-title",
+                    style={'textAlign': 'left',"color": "gray"}),
+            html.H2("de vivienda", 
+                    className="card-subtitle",
+                    style={'textAlign': 'left',"color": "black", "font-weight": 'bold'}),
             
      dbc.Table( table_body, bordered=False)
-                    ]
-        ), style={"width": "50rem", 
+                    ]),
+    
+    
+    style={"width": "50rem", 
           "border": "0",
           "fill" : "orange"},
-        )
-           
+)
+#card3 = dbc.Card(
+#    dbc.CardBody(
+#        [
+#            html.P([dbc.Button([html.H1(className="fas fa-home"),
+#            "  Variables de Vivienda"], 
+#                    style={'textAlign': 'left',"color":"#eada79",
+#                   #'FontColor': 220,
+#                   "font-size": "40px",
+#                          })]),
+#            html.Br(),
+#            
+#     dbc.Table( table_body, bordered=False)
+#                    ]
+#        ), style={"width": "50rem", 
+#          "border": "0",
+#          "fill" : "orange"},
+#        )
+#           
            
 
 
@@ -431,7 +450,7 @@ card2p3 = dbc.Card(
 
 row1 = html.Tr([
                 dbc.Alert([html.P(className="fas fa-male", style={"color": "#D500F9"}),
-                           "    Población nacida en otra entidad"], color="warning"), 
+                           "    Población nacida en otra entidad"], className="mb-0"), 
                 html.Td("19,172,575"),#,style={'textAlign': 'bottom'}),
                 dbc.Alert("94%", 
                         style={#'textAlign': 'up', 
@@ -443,7 +462,7 @@ row1 = html.Tr([
                         })])
 
 row2 = html.Tr([dbc.Alert([html.P(className="fas fa-male", style={"color": "#D500F9"}),
-                           "    Población femenina nacida en otra entidad"], color="warning"), 
+                           "    Población femenina nacida en otra entidad"], className="mb-0"), 
                 html.Td("5,311,593"),
                 html.Td("98%",
                         style={'textAlign': 'center',
@@ -451,7 +470,7 @@ row2 = html.Tr([dbc.Alert([html.P(className="fas fa-male", style={"color": "#D50
                          "font-size": "30px",
                          "font-weight": 'bold',})])
 row3 = html.Tr([dbc.Alert([html.P(className="fas fa-male", style={"color": "#D500F9"}),
-                           "    Población masculina nacida en otra entidad"], color="warning"), 
+                           "    Población masculina nacida en otra entidad"], className="mb-0"), 
                 html.Td("5,162,569"),  
                 html.Td("99%",
                         style={'textAlign': 'center',
@@ -587,12 +606,10 @@ card_v_derechohab = dbc.Card(
     dbc.CardBody(
         [
             html.P([dbc.Button([html.H1(className="fa fa-medkit"),
-            #"    Variables de Migración"], 
-            #        style={'textAlign': 'left',"color": "gray",
-            #       'FontColor': 120}),
+       
             "  Variables de Derechohabiencia"], 
                     style={'textAlign': 'left',"color":"#51c8e1",
-                   #'FontColor': 220,
+                   
                    "font-size": "40px",
                            
                           })]),
@@ -851,8 +868,9 @@ card_v_religion = dbc.Card(
           "border": "0",
           "fill" : "orange"},
 )
+       
      
-    ##########################################################################
+##########################################################################
 # A P P 
 ##########################################################################
 
@@ -873,13 +891,13 @@ body = html.Div([
     
     ################## SECCION 1 (pag1)_VARIABLES DE POBLACION
     dbc.Row([
-        dbc.Col(dbc.Card(card)),
+        dbc.Col(dbc.Card(card), sm={  "offset": 1, }),
         dbc.Col(dbc.Card(card2),                      #población total
                style={#'margin-top': '-540px',       #arriba
-                      'margin-left': '-80px', 
+                      'margin-left': '-100px', 
                #       'width': '479px',
                #       'height': '100%',
-               })
+               }, sm={  "offset": 1, })
      ], className="blockquote"),
     
     dbc.Row([
