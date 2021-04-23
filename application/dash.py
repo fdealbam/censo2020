@@ -893,11 +893,12 @@ body = html.Div([
     dbc.Row([
         dbc.Col(dbc.Card(card), sm={  "offset": 1, }),
         dbc.Col(dbc.Card(card2),                      #población total
-               style={#'margin-top': '-540px',       #arriba
-                      'margin-left': '-100px', 
+              # style={#'margin-top': '-540px',       #arriba
+               #       'margin-left': '-100px', 
                #       'width': '479px',
                #       'height': '100%',
-               }, sm={  "offset": 1, })
+               #}, 
+                sm={  "offset": 1, })
      ], className="blockquote"),
     
     dbc.Row([
