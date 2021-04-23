@@ -1,4 +1,3 @@
-
 import dash
 import dash_bootstrap_components as dbc
 import dash_core_components as dcc
@@ -490,23 +489,22 @@ table_body = [html.Tbody([row1, row2, row3])]
 card4 = dbc.Card(
     dbc.CardBody(
         [
-            html.P([dbc.Button([html.H1(className="fa fa-arrows-alt"),
-            #"    Variables de Migración"], 
-            #        style={'textAlign': 'left',"color": "gray",
-            #       'FontColor': 120}),
-            "  Variables de Migración"], 
-                    style={'textAlign': 'left',"color":"#D500F9",
-                   #'FontColor': 220,
-                   "font-size": "40px",
-                           
-                          }),
+            html.H6("Variables", 
+                    className="card-title",
+                    style={'textAlign': 'left',"color": "gray"}),
+            html.H2("de migración", 
+                    className="card-subtitle",
+                    style={'textAlign': 'left',"color": "black", "font-weight": 'bold'}),
             
-            dbc.Table(table_body, bordered=False)
-         ])]),
+     dbc.Table( table_body, bordered=False)
+                    ]),
+    
+    
+    style={"width": "50rem", 
+          "border": "0",
+          "fill" : "orange"},
+)
 
-            style={"width": "50rem", 
-                  "border": "0",
-                  "fill" : "orange"})
 
          
   
@@ -549,30 +547,26 @@ table_body = [html.Tbody([row1, row2, row3])]
 
 
 #################################### card_v_edu
+
+           
 card_v_edu = dbc.Card(
     dbc.CardBody(
         [
-            html.P([dbc.Button([html.H1(className="fa fa-book"),
-            "  Variables de Educación"], 
-                    style={'textAlign': 'left',"color":"#9dbf88",
-                   #'FontColor': 220,
-                   "font-size": "40px",
-                           
-                          })]),
-
-            html.Br(),
-          
+            html.H6("Variables", 
+                    className="card-title",
+                    style={'textAlign': 'left',"color": "gray"}),
+            html.H2("de educación", 
+                    className="card-subtitle",
+                    style={'textAlign': 'left',"color": "black", "font-weight": 'bold'}),
             
-            dbc.Table( table_body, bordered=False)
-                    ]
-    ),
+     dbc.Table( table_body, bordered=False)
+                    ]),
+    
     
     style={"width": "50rem", 
           "border": "0",
           "fill" : "orange"},
-)
-           
-    
+)   
 
     
     
@@ -602,30 +596,25 @@ table_body = [html.Tbody([row1, row2, ])]
 
 
 #################################### card_v_derechohab
+
 card_v_derechohab = dbc.Card(
     dbc.CardBody(
         [
-            html.P([dbc.Button([html.H1(className="fa fa-medkit"),
-       
-            "  Variables de Derechohabiencia"], 
-                    style={'textAlign': 'left',"color":"#51c8e1",
-                   
-                   "font-size": "40px",
-                           
-                          })]),
-
-            html.Br(),
-          
+            html.H6("Variables", 
+                    className="card-title",
+                    style={'textAlign': 'left',"color": "gray"}),
+            html.H2("de derechohabiencia", 
+                    className="card-subtitle",
+                    style={'textAlign': 'left',"color": "black", "font-weight": 'bold'}),
             
-            dbc.Table( table_body, bordered=False)
-                    ]
-    ),
+     dbc.Table( table_body, bordered=False)
+                    ]),
+    
     
     style={"width": "50rem", 
           "border": "0",
           "fill" : "orange"},
-)
-           
+)           
 
     
     
@@ -674,26 +663,26 @@ table_body = [html.Tbody([row1, row2, row3, row4])]
 
 
 #################################### card_v_hog_cens
-card_v_hog_cens = dbc.Card(
+
+           
+card_v_hog_cens  = dbc.Card(
     dbc.CardBody(
         [
-            html.P([dbc.Button([html.H1(className="fa fa-child"),
-            "  Variables de Hogares censales"], 
-                    style={'textAlign': 'left',"color":"#f0bdeb",
-                   #'FontColor': 220,
-                   "font-size": "40px",
-                          })]),
-            html.Br(),
-            dbc.Table( table_body, bordered=False)
-                    ]
-    ),
+            html.H6("Variables", 
+                    className="card-title",
+                    style={'textAlign': 'left',"color": "gray"}),
+            html.H2("de hogares censales", 
+                    className="card-subtitle",
+                    style={'textAlign': 'left',"color": "black", "font-weight": 'bold'}),
+            
+     dbc.Table( table_body, bordered=False)
+                    ]),
+    
     
     style={"width": "50rem", 
           "border": "0",
           "fill" : "orange"},
-)
-           
-
+)     
     
     
     
@@ -725,32 +714,25 @@ table_body = [html.Tbody([row1, row2,])]
 
 
 #################################### card_v_discapacidad
-card_v_discapacidad = dbc.Card(
+
+card_v_discapacidad   = dbc.Card(
     dbc.CardBody(
         [
- 
-            html.P([dbc.Button([html.H1(className="fa fa-wheelchai"),
-            #"    Variables de Migración"], 
-            #        style={'textAlign': 'left',"color": "gray",
-            #       'FontColor': 120}),
-            "  Variables de Discapacidad"], 
-                    style={'textAlign': 'left',"color":"#a58ca3",
-                   #'FontColor': 220,
-                   "font-size": "40px",
-                           
-                          })]),
-
-            html.Br(),
+            html.H6("Variables", 
+                    className="card-title",
+                    style={'textAlign': 'left',"color": "gray"}),
+            html.H2("de discapacidad", 
+                    className="card-subtitle",
+                    style={'textAlign': 'left',"color": "black", "font-weight": 'bold'}),
             
-            dbc.Table( table_body, bordered=False)
-                    ]
-    ),
+     dbc.Table( table_body, bordered=False)
+                    ]),
+    
     
     style={"width": "50rem", 
           "border": "0",
           "fill" : "orange"},
-)
-
+)   
 
 ##########################################################################
 #Seccion 10. Variables de ECONOMIA
@@ -798,28 +780,26 @@ table_body = [html.Tbody([row1, row2, row3, row4])]
 
 
 #################################### card_v_economia
-card_v_economia = dbc.Card(
+
+           
+card_v_economia    = dbc.Card(
     dbc.CardBody(
         [
-            html.P([dbc.Button([html.H1(className="fa fa-transgender-alt"),
-            "  Variables de Economía"], 
-                    style={'textAlign': 'left',"color":"#51c8e1",
-                   #'FontColor': 220,
-                   "font-size": "40px",
-                           
-                          })]),
-
-            html.Br(),
-            dbc.Table( table_body, bordered=False)
-                    ]
-    ),
+            html.H6("Variables", 
+                    className="card-title",
+                    style={'textAlign': 'left',"color": "gray"}),
+            html.H2("de economía", 
+                    className="card-subtitle",
+                    style={'textAlign': 'left',"color": "black", "font-weight": 'bold'}),
+            
+     dbc.Table( table_body, bordered=False)
+                    ]),
+    
     
     style={"width": "50rem", 
           "border": "0",
           "fill" : "orange"},
-)
-           
-
+)  
     
 ##########################################################################
 #Seccion 11. Variables de RELIGION
@@ -849,25 +829,26 @@ table_body = [html.Tbody([row1, row2, ])]
 
 
 #################################### card_v_religion
-card_v_religion = dbc.Card(
+ 
+           
+card_v_religion    = dbc.Card(
     dbc.CardBody(
         [
-            html.P([dbc.Button([html.H1(className="fa fa-transgender-alt"),
-            "  Variables de Religión"], 
-                    style={'textAlign': 'left',"color":"#51c8e1",
-                   "font-size": "40px",
-                           
-                          })]),
-
-            html.Br(),
-            dbc.Table( table_body, bordered=False)
-                    ]
-    ),
+            html.H6("Variables", 
+                    className="card-title",
+                    style={'textAlign': 'left',"color": "gray"}),
+            html.H2("de religión", 
+                    className="card-subtitle",
+                    style={'textAlign': 'left',"color": "black", "font-weight": 'bold'}),
+            
+     dbc.Table( table_body, bordered=False)
+                    ]),
+    
     
     style={"width": "50rem", 
           "border": "0",
           "fill" : "orange"},
-)
+)    
        
      
 ##########################################################################
@@ -894,7 +875,7 @@ body = html.Div([
         dbc.Col(dbc.Card(card), sm={  "offset": 1, }),
         dbc.Col(dbc.Card(card2),                      #población total
                style={#'margin-top': '-540px',       #arriba
-                      'margin-left': '-90px', 
+                      'margin-left': '-130px', 
                #       'width': '479px',
                #       'height': '100%',
                }, 
