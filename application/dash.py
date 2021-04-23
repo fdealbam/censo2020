@@ -876,7 +876,7 @@ body = html.Div([
         dbc.Col(dbc.Card(card)),
         dbc.Col(dbc.Card(card2),                      #población total
                style={#'margin-top': '-540px',       #arriba
-                      'margin-left': '-105px', 
+                      'margin-left': '-100px', 
                #       'width': '479px',
                #       'height': '100%',
                })
