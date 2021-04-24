@@ -187,6 +187,7 @@ card = dbc.Card(
     
     style={"width": "22.5rem", 
           "border": "0",
+           "card-border": "0",
            # 'margin-left': '-30px'
           },
 )
@@ -695,13 +696,13 @@ cardmigra3 = dbc.Card(
           "background-color": "#880E4F"
           },)
 
-         
+#"fas fa-plane-departure"         
 card_migracion =dbc.Card(
     dbc.CardBody([
-        html.P([dbc.Button([html.H1(className="fas fa-home",
+        html.P([dbc.Button([html.H1(className="fas fa-plane-departure",
                                 style={'textAlign': 'left',
                                        "color":"#880E4F",
-                                      "font-size": "80px"}),
+                                      "font-size": "70px"}),
             "  Variables de Migración"], 
                     style={'textAlign': 'left',"color":"#880E4F",
                    "font-size": "30px",
@@ -781,10 +782,11 @@ card_derechohab2 = dbc.Card(
                                   },)
                 
 #################################### card_v_derechohab
-
+#"fas fa-hospital-user"
+#"fas fa-procedures"
 card_v_derechohab = dbc.Card(
     dbc.CardBody([
-        html.P([dbc.Button([html.H1(className="fas fa-pills",
+        html.P([dbc.Button([html.H1(className="fas fa-procedures",
                                 style={'textAlign': 'left',
                                        "color":"#0097A7",
                                       "font-size": "80px"}),
@@ -850,7 +852,7 @@ card_v_hog_cens = dbc.Card(
     dbc.CardBody(
         [
 
-        html.P([dbc.Button([html.H1(className= "fas fa-home",
+        html.P([dbc.Button([html.H1(className= "fas fa-users",
                                     #"fas fa-house",
                                 style={'textAlign': 'left',
                                        "color":"#F48FB1",
@@ -1067,16 +1069,16 @@ card_economia_discap = dbc.Card(
             html.H6("No económicamente activa con limitación física o mental", 
                     style={'textAlign': 'left',
                            "color": "white",
-                           "background-color": "#BA68C8"}),
+                           "background-color": "#6A1B9A"}),
             html.H3("112,842", style={'textAlign': 'left',
                                       "color": "white",
-                                      "background-color": "#BA68C8"}),
+                                      "background-color": "#6A1B9A"}),
             html.Br(),
             html.Br(),
             
             dbc.ButtonGroup(html.Span([
                 html.H1(className="fas fa-wheelchair", 
-                        style={"background-color": "#BA68C8",
+                        style={"background-color": "#6A1B9A",
                                "color":"white",
                                "font-size": "110px",
                               #'size':'80px',
@@ -1093,10 +1095,10 @@ card_economia_discap = dbc.Card(
                          "font-size": "40px",
                          #'margin-top': '-32px',
                          #'margin-bottom': '30px',
-                         "background-color": "#BA68C8"}),]),
+                         "background-color": "#6A1B9A"}),]),
     style={"width": "13rem", 
           "border": "0",
-          "background-color": "#BA68C8",
+          "background-color": "#6A1B9A",
            'color':'#BA68C8',
            "height": "550px",
           })
@@ -1249,11 +1251,23 @@ card_v_edu = dbc.Card(
     
     
     style={"width": "50rem", 
-          "border": "0",
-          "fill" : "orange"},
+        #   "border":"none",
+     #    "border-color": "transparent",
+    #"background-color": "transparent",
+     #     " border-bottom":" 1px solid rgba(0,0,0,.8)",
+          # "border": "0",
+          # "border-top":"0",
+          # "border-right":"0",
+          # "border-bottom":"0",
+          # "border-left":"0",
+          #  "padding": "0",
+          # "card-border": 0,
+           "border-color": "white",
+         },
 )
-  
-    ########################################################################
+    
+    
+########################################################################
 # A P P 
 ########################################################################
 
@@ -1273,33 +1287,50 @@ body = html.Div([
     dbc.Row(
            [
                dbc.Col(dbc.CardImg(src="https://github.com/fdealbam/CamaraDiputados/blob/main/application/static/logocamara.jfif?raw=true",
-                        ),width ={ "size": 1,  "offset": 1}),
-               dbc.Col(html.H1("Reporte estadístico básico de "
-                               "Zonas Metropolitanas",
-                        style={'offset' : 2, 
-                              "font-size": "35px",
-                              "color": "dark",
+                        ),width ={ "size": 1,  "offset": 1,
+                                  "height": "5px"}),
+               dbc.Col(html.H4("Reporte estadístico básico de ",
+                        style={'offset' : 1, "size": 6,
+                              "font-size": "15px",
+                              "color": "grey",
+                               "height": "5px",
                               'textAlign': 'center',
                                #"font-weight": 'bold',
                                "font-family": "Montserrat"
                               })),
-           ]),
-
-#Cintillo 00    
+                      ], justify= "center"),               
+    dbc.Row(
+           [
+               dbc.Col(html.H1("Zonas Metropolitanas",
+                        style={ "size": 6, "offset":2,
+                              "font-size": "35px",
+                               "height": "40px",
+                              "color": "dark",
+                              'textAlign': 'center',
+                               #"font-weight": 'bold',
+                               "font-family": "Montserrat",
+                              },)),
+                      ], justify= "center"),            
+    
+    #Cintillo 00    
     dbc.Row(
            [
                dbc.Col(html.H6(d2),           #Fecha de actualización
                width={'size' : "auto",
-                      'offset' : 4}), 
-               dbc.Col(html.H6("Fuente: ----"),
-                        width={'size': 3,  "offset":1 }),
-            ]),
+                      'offset' : 1,
+                      #'textAlign': 'center',
+                     }), 
+            ], justify= "center"),
+    dbc.Row(
+           [
+               dbc.Col(html.H6("Fuente: Censo 2020, INEGI"),
+                        width={'size' : "auto",
+                               #"offset":1,
+                              'textAlign': 'center',
+                               "color": "grey",
+}),
+            ], justify= "center"),
                
-       html.Br(),
-       html.Br(),
-    
-
-    html.Br(),
     html.Br(),
     
 
@@ -1585,7 +1616,15 @@ body = html.Div([
          sm={  "offset": 1, }),
      ], no_gutters= True, justify= "start",
      className="blockquote",),
-     dbc.Row([
+
+    html.Br(),
+    html.Br(),
+    html.Br(),
+    html.Br(),
+    html.Br(),
+    html.Br(),
+    
+    dbc.Row([
                                     #https://github.com/fdealbam/CamaraDiputados/blob/b11ef31e8e0f73e1a4a06ce60402563e1bd0122e/application/static/logocamara.jfif
            dbc.Col(dbc.CardImg(src="https://github.com/fdealbam/CamaraDiputados/blob/main/application/static/logocamara.jfif?raw=true"),
                         width=4, lg={'size': 1,  "offset": 3, }),
@@ -1595,6 +1634,22 @@ body = html.Div([
                            " México, 2021 "),
                   width={'size': 3, 'offset': 0}),
                ], justify="start",),
+     dbc.Row([    
+           dbc.Col(html.H5([dbc.Badge("Equipo responsable", 
+                          href="https://raw.githubusercontent.com/fdealbam/feminicidios/main/Autores.pdf",
+                          #color="light",
+                          #className="ml-1")
+                                     )]),
+                  width={'size': 3,  "offset": 4}),
+                       ], justify="start",),
+    html.Br(),
+    html.Br(),
+    html.Br(),
+
+    
+
+    
+    html.Br(),
         
             ])
     
@@ -1604,4 +1659,3 @@ app.layout = html.Div([body])
 
 if __name__ == '__main__':
     app.run_server(use_reloader = False)
-    
