@@ -265,12 +265,11 @@ card21 = dbc.Card(
 
                          })]), 
                             style={"width": "25.5rem", 
-                                      "border": "0",
-                                       #"height": "10px",
-                                      "background-color": "#0097A7",
-           
-          },
-)
+                                   "border": "0",
+                                   #"height": "10px",
+                                   "background-color": "#0097A7",
+                                  },)
+
 card22 = dbc.Card(
     dbc.CardBody(
         [
@@ -297,10 +296,7 @@ card22 = dbc.Card(
                                       "border": "0",
                                        #"height": "10px",
                                       "background-color": "#0097A7",
-           
-          },
-)
-
+                                  },)
 
 card23 = dbc.Card(
     dbc.CardBody(
@@ -328,10 +324,7 @@ card23 = dbc.Card(
                                       "border": "0",
                                        #"height": "10px",
                                       "background-color": "#0097A7",
-           
-          },
-),
-
+                                  },),
 
 card24 = dbc.Card(
     dbc.CardBody(
@@ -359,10 +352,7 @@ card24 = dbc.Card(
                                       "border": "0",
                                        #"height": "10px",
                                       "background-color": "#0097A7",
-           
-          },
-)
-
+                                  },)
 
 card25 = dbc.Card(
     dbc.CardBody(
@@ -390,11 +380,7 @@ card25 = dbc.Card(
                                       "border": "0",
                                        #"height": "10px",
                                       "background-color": "#0097A7",
-           
-          },
-)
-
-
+                                  },)
 
 card26 = dbc.Card(
     dbc.CardBody(
@@ -422,9 +408,7 @@ card26 = dbc.Card(
                                       "border": "0",
                                        #"height": "10px",
                                       "background-color": "#0097A7",
-           
-          },
-)
+                                  },)
 
 card27 = dbc.Card(
     dbc.CardBody(
@@ -452,9 +436,7 @@ card27 = dbc.Card(
                                       "border": "0",
                                        #"height": "10px",
                                       "background-color": "#0097A7",
-           
-          },
-)
+                                  },)
 
 
 ##########################################################################
@@ -529,7 +511,7 @@ card3 = dbc.Card(
                                       "font-size": "80px"}),
             "  Variables de Vivienda"], 
                     style={'textAlign': 'left',"color":"#FBC02D",
-                   "font-size": "40px",
+                   "font-size": "30px",
                           })]),
             
      dbc.Table( table_body, bordered=False)
@@ -614,65 +596,8 @@ card2p3 = dbc.Card(
 #Seccion 5 Variables de MIGRACION
 ##########################################################################
 
-#row1 = html.Tr([
-#                dbc.Alert([html.P(className="fas fa-male", style={"color": "#D500F9"}),
-#                           "    Población nacida en otra entidad"], className="mb-0"), 
-#                html.Td("19,172,575"),#,style={'textAlign': 'bottom'}),
-#                dbc.Alert("94%", 
-#                        style={#'textAlign': 'up', 
-#                         #"height": "10px",
-#                         "color":"#D500F9",
-#                         "font-size": "40px",
-#                         "font-weight": "bolder",
-#                         #"font-color": "#D500F9"   ,
-#                        })])
-#
-#row2 = html.Tr([dbc.Alert([html.P(className="fas fa-male", style={"color": "#D500F9"}),
-#                           "    Población femenina nacida en otra entidad"], className="mb-0"), 
-#                html.Td("5,311,593"),
-#                html.Td("98%",
-#                        style={'textAlign': 'center',
-#                         "color": "black",  
-#                         "font-size": "30px",
-#                         "font-weight": 'bold',})])
-#row3 = html.Tr([dbc.Alert([html.P(className="fas fa-male", style={"color": "#D500F9"}),
-#                           "    Población masculina nacida en otra entidad"], className="mb-0"), 
-#                html.Td("5,162,569"),  
-#                html.Td("99%",
-#                        style={'textAlign': 'center',
-#                         "color": "black",  
-#                         "font-size": "30px",
-#                         "font-weight": 'bold',})])
-#
-#table_body = [html.Tbody([row1, row2, row3])]
 
-
-
-
-
-
-
-#################################### Card4
-#card4 = dbc.Card(
-#    dbc.CardBody(
-#        [
-#            html.H6("Variables", 
-#                    className="card-title",
-#                    style={'textAlign': 'left',"color": "gray"}),
-#            html.H2("de migración", 
-#                    className="card-subtitle",
-#                    style={'textAlign': 'left',"color": "black", "font-weight": 'bold'}),
-#            
-#     #dbc.Table( table_body, bordered=False)
-#                    ]),
-#    
-#    
-#    style={"width": "50rem", 
-#          "border": "0",
-#          "fill" : "orange"},
-#)
-
-cardmigra = dbc.Card(
+cardmigra1 = dbc.Card(
     dbc.CardBody(
         [
             html.H6("Población nacida en otra entidad", 
@@ -763,185 +688,178 @@ cardmigra3 = dbc.Card(
                          'margin-bottom': '37px',
                          "height": "7px",
                          })          
-                
-        ]
-    ),
+                ]),
     
     style={#"width": "50 rem", 
           "border": "0",
           "background-color": "#880E4F"
-          },
-)
+          },)
 
          
+card_migracion =dbc.Card(
+    dbc.CardBody([
+        html.P([dbc.Button([html.H1(className="fas fa-home",
+                                style={'textAlign': 'left',
+                                       "color":"#880E4F",
+                                      "font-size": "80px"}),
+            "  Variables de Migración"], 
+                    style={'textAlign': 'left',"color":"#880E4F",
+                   "font-size": "30px",
+                          }),
 
-
-
-
-    
-    
-##########################################################################
-#Seccion 6 Variables de EDUCACION
-##########################################################################
-
-row1 = html.Tr([
-                dbc.Alert([#html.P(className="fas fa-male", style={"color": "#D500F9"}),
-                           "    De 15 años y más alfabeta"], color="warning"), 
-                html.Td("14,123,123"),#,style={'textAlign': 'bottom'}),
-                dbc.Alert("96%", 
-                        style={'textAlign': 'center',
-                         "color": "black",  
-                         "font-size": "30px",
-                         "font-weight": 'bold', })])
-
-row2 = html.Tr([dbc.Alert([#html.P(className="fas fa-male", style={"color": "#D500F9"}),
-                           "    De 15 años y más con educación básica completa"], color="warning"), 
-                html.Td("3,123,123"),
-                html.Td("27%",
-                        style={'textAlign': 'center',
-                         "color": "black",  
-                         "font-size": "30px",
-                         "font-weight": 'bold',})])
-row3 = html.Tr([dbc.Alert([#html.P(className="fas fa-male", style={"color": "#D500F9"}),
-                           "    De 15 años y más analfabeta"], color="warning"), 
-                html.Td("123,123"),
-                html.Td("4%",
-                        style={'textAlign': 'center',
-                         "color": "black",  
-                         "font-size": "30px",
-                         "font-weight": 'bold',})])
-table_body = [html.Tbody([row1, row2, row3])]
-
-
-
-#################################### card_v_edu
-
-           
-card_v_edu = dbc.Card(
-    dbc.CardBody(
-        [
-            html.H6("Variables", 
-                    className="card-title",
-                    style={'textAlign': 'left',"color": "gray"}),
-            html.H2("de educación", 
-                    className="card-subtitle",
-                    style={'textAlign': 'left',"color": "black", "font-weight": 'bold'}),
             
-     dbc.Table( table_body, bordered=False)
-                    ]),
-    
-    
-    style={"width": "50rem", 
-          "border": "0",
-          "fill" : "orange"},
-)   
+        dbc.Card(cardmigra1),
+        html.Br(),
+        dbc.Card(cardmigra2),
+        html.Br(),
+        dbc.Card(cardmigra3),
+    ],style={"width": "50rem", 
+           "border": "0",
+             })]))
 
-    
-    
+
+
 ##########################################################################
 #Seccion 7. Variables de DERECHOHABIENCIA
 ##########################################################################
 
-row1 = html.Tr([
-                dbc.Alert([#html.P(className="fas fa-male", style={"color": "#D500F9"}),
-                           "    Población derchohabiente del IMSS"], color="warning"), 
-                html.Td("6,851,070"),#,style={'textAlign': 'bottom'}),
-                dbc.Alert("47%", 
-                        style={'textAlign': 'center',
-                         "color": "black",  
-                         "font-size": "30px",
-                         "font-weight": 'bold', })])
 
-row2 = html.Tr([dbc.Alert([#html.P(className="fas fa-male", style={"color": "#D500F9"}),
-                           "    Población derechohabiente del Seguro Popular o Seguro Médico para una Nueva Generación"], color="warning"), 
-                html.Td("2,088,735"),
-                html.Td("31%",
-                        style={'textAlign': 'center',
-                         "color": "black",  
-                         "font-size": "30px",
-                         "font-weight": 'bold',})])
-table_body = [html.Tbody([row1, row2, ])]
+card_derechohab1 = dbc.Card(
+    dbc.CardBody(
+        [
+            html.H6("Derechohabiente del IMSS", 
+                    style={'textAlign': 'left',
+                           "color": "white",
+                            "height": "7px",
+                          "background-color": "#9cd9e0"}),
+            html.H5("13,660,403", 
+                    style={'textAlign': 'left',
+                            "height": "7px",
+                           "color": "white",
+                          "background-color": "#9cd9e0"}),
+            html.H2("64%", 
+                  style={'textAlign': 'right',
+                         "color": "white",
+                         "height": "7px",
+                         "font-size": "38px",
+                         'margin-top': '-32px',
+                         'margin-bottom': '30px',
 
+                         })]), 
+                            style={"width": "48rem", 
+                                      "border": "0",
+                                       #"height": "10px",
+                                      "background-color": "#9cd9e0",
+                                  },)
 
+card_derechohab2 = dbc.Card(
+    dbc.CardBody(
+        [
+            html.H6("Derechohabiente del Seg. Pop. o Seguro Médico para una Nueva Generación", 
+                    style={'textAlign': 'left',
+                           "color": "white",
+                            "height": "7px",
+                          "background-color": "#0097A7"}),
+            html.H5("13,660,403", 
+                    style={'textAlign': 'left',
+                            "height": "7px",
+                           "color": "white",
+                          "background-color": "#0097A7"}),
+            html.H2("64%", 
+                  style={'textAlign': 'right',
+                         "color": "white",
+                         "height": "7px",
+                         "font-size": "38px",
+                         'margin-top': '-32px',
+                         'margin-bottom': '30px',
+
+                         })]), 
+                            style={"width": "48rem", 
+                                      "border": "0",
+                                       #"height": "10px",
+                                      "background-color": "#0097A7",
+                                  },)
+                
 #################################### card_v_derechohab
 
 card_v_derechohab = dbc.Card(
-    dbc.CardBody(
-        [
-            html.H6("Variables", 
-                    className="card-title",
-                    style={'textAlign': 'left',"color": "gray"}),
-            html.H2("de derechohabiencia", 
-                    className="card-subtitle",
-                    style={'textAlign': 'left',"color": "black", "font-weight": 'bold'}),
-            
-     dbc.Table( table_body, bordered=False)
-                    ]),
-    
-    
+    dbc.CardBody([
+        html.P([dbc.Button([html.H1(className="fas fa-pills",
+                                style={'textAlign': 'left',
+                                       "color":"#0097A7",
+                                      "font-size": "80px"}),
+            "  Variables de derechohabiencia"], 
+                    style={'textAlign': 'left',"color":"#0097A7",
+                   "font-size": "30px",
+                          })]),
+        
+        dbc.Card(card_derechohab1),
+        html.Br(),
+        dbc.Card(card_derechohab2),]),
     style={"width": "50rem", 
-          "border": "0",
-          "fill" : "orange"},
-)           
+           "border": "0",
+           "fill" : "orange"},)
 
-    
+
     
 ##########################################################################
 #Seccion 8. Variables de HOGARES CENSALES
 ##########################################################################
 
-row1 = html.Tr([
-                dbc.Alert([html.P(className="fas fa-male", style={"color": "#D500F9"}),
-                           "    Población en hogares con jefa(e) de 30 a 59 años"], color="warning"), 
-                html.Td("13,833,033"),#,style={'textAlign': 'bottom'}),
-                dbc.Alert("72%", 
-                        style={'textAlign': 'center',
-                         "color": "black",  
-                         "font-size": "30px",
-                         "font-weight": 'bold', })])
+row1 = html.Tr([dbc.Alert("Población en hogares con jefa(e) de 30 a 59 años", color="#E0E0E0",), 
+                html.Td("172,575"),
+                dbc.Alert("4%", color="light",
+                        style={"font-size": "35px",
+                        "font-weight": 'bold',
+                        "color": "#F48FB1",       
+                        })])
 
-row2 = html.Tr([dbc.Alert([html.P(className="fas fa-male", style={"color": "#D500F9"}),
-                           "    Población en hogares con jefa(e) de 60 años y más"], color="warning"), 
-                html.Td("3,983,622"),
-                html.Td("18%",
-                        style={'textAlign': 'center',
-                         "color": "black",  
-                         "font-size": "30px",
-                         "font-weight": 'bold',})])
-row3 = html.Tr([dbc.Alert([html.P(className="fas fa-male", style={"color": "#D500F9"}),
-                           "    Población en hogares con jefatura femenina"], color="warning"), 
-                html.Td("1,412,824"),  
-                html.Td("23%",
-                        style={'textAlign': 'center',
-                         "color": "black",  
-                         "font-size": "30px",
-                         "font-weight": 'bold',})])
 
-row4 = html.Tr([dbc.Alert([html.P(className="fas fa-male", style={"color": "#D500F9"}),
-                           "    Población en hogares con jefa e hijos menores de 18 años"], color="warning"), 
-                html.Td("262,459"),  
-                html.Td("21%%",
-                        style={'textAlign': 'center',
-                         "color": "black",  
-                         "font-size": "30px",
-                         "font-weight": 'bold',})])
+row2 = html.Tr([dbc.Alert("Población en hogares con jefa(e) de 60 años y más", color="#E0E0E0",), 
+                html.Td("19,172,575"),
+                dbc.Alert("59%", color="light",
+                        style={"font-size": "35px",
+                        "font-weight": 'bold',
+                        "color": "#F48FB1",       
+                        })])
+
+row3 = html.Tr([dbc.Alert("Población en hogares con jefatura femenina", color="#E0E0E0",), 
+                html.Td("19,172,575"),
+                dbc.Alert("59%", color="light",
+                        style={"font-size": "35px",
+                        "font-weight": 'bold',
+                        "color": "#F48FB1",       
+                        })])
+
+row4 = html.Tr([dbc.Alert("Población en hogares con jefa e hijos menores de 18 años", color="#E0E0E0",), 
+                html.Td("19,172,575"),
+                dbc.Alert("59%", color="light",
+                        style={"font-size": "35px",
+                        "font-weight": 'bold',
+                        "color": "#F48FB1",       
+                        })])
+
 table_body = [html.Tbody([row1, row2, row3, row4])]
-
 
 
 
 #################################### card_v_hog_cens
 
            
-card_v_hog_cens  = dbc.Card(
+card_v_hog_cens = dbc.Card(
     dbc.CardBody(
         [
-            html.H6("Variables", 
-                    className="card-title",
-                    style={'textAlign': 'left',"color": "gray"}),
-            html.H2("de hogares censales", 
-                    className="card-subtitle",
-                    style={'textAlign': 'left',"color": "black", "font-weight": 'bold'}),
+
+        html.P([dbc.Button([html.H1(className= "fas fa-home",
+                                    #"fas fa-house",
+                                style={'textAlign': 'left',
+                                       "color":"#F48FB1",
+                                      "font-size": "80px"}),
+            "  Variables de hogares censales"], 
+                    style={'textAlign': 'left',"color":"#F48FB1",
+                   "font-size": "30px",
+                          })]),            
+            
             
      dbc.Table( table_body, bordered=False)
                     ]),
@@ -950,10 +868,8 @@ card_v_hog_cens  = dbc.Card(
     style={"width": "50rem", 
           "border": "0",
           "fill" : "orange"},
-)     
-    
-    
-    
+)
+
     
 ##########################################################################
 #Seccion 9. Variables de DISCAPACIDAD
@@ -964,7 +880,7 @@ row1 = html.Tr([dbc.Alert("Poblacion con discapacidad", color="#E0E0E0",),
                 dbc.Alert("4%", color="light",
                         style={"font-size": "35px",
                         "font-weight": 'bold',
-                        "color": "#8a2be2",       
+                        "color": "#BA68C8",       
                         })])
 
 
@@ -973,7 +889,7 @@ row2 = html.Tr([dbc.Alert("Poblacion con discapacidad derechohabiente", color="#
                 dbc.Alert("59%", color="light",
                         style={"font-size": "35px",
                         "font-weight": 'bold',
-                        "color": "#8a2be2",       
+                        "color": "#BA68C8",       
                         })])
 
 table_body = [html.Tbody([row1, row2,])]
@@ -985,11 +901,11 @@ card_v_discapacidad = dbc.Card(
             
             html.P([dbc.Button([html.H1(className="fa fa-wheelchair",
                                 style={'textAlign': 'left',
-                                       "color":"#8a2be2",
+                                       "color":"#BA68C8",
                                       "font-size": "80px"}),
             "  Variables de Discapacidad"], 
-                    style={'textAlign': 'left',"color":"#8a2be2",
-                   "font-size": "40px",
+                    style={'textAlign': 'left',"color":"#BA68C8",
+                   "font-size": "30px",
                           })]),
             
      dbc.Table( table_body, bordered=False)
@@ -1003,6 +919,7 @@ card_v_discapacidad = dbc.Card(
 ##########################################################################
 #Seccion 10. Variables de ECONOMIA
 ##########################################################################
+
 
 card_econom1 = dbc.Card(
     dbc.CardBody(
@@ -1025,11 +942,14 @@ card_econom1 = dbc.Card(
                          'margin-top': '-32px',
                          'margin-bottom': '30px',
 
-                         })]),style={"width": "40rem", 
+                         })]),style={"width": "36rem", 
                                       "border": "0",
                                        #"height": "10px",
                                       "background-color": "#9cd9e0",
                                     },)
+
+
+
 
 card_econom2 = dbc.Card(
     dbc.CardBody(
@@ -1052,7 +972,7 @@ card_econom2 = dbc.Card(
                          'margin-top': '-32px',
                          'margin-bottom': '30px',
 
-                         })]),style={"width": "35rem", 
+                         })]),style={"width": "36rem", 
                                       "border": "0",
                                        #"height": "10px",
                                       "background-color": "#0097A7",
@@ -1080,7 +1000,7 @@ card_econom3 = dbc.Card(
                          'margin-top': '-32px',
                          'margin-bottom': '30px',
 
-                         })]),style={"width": "35rem", 
+                         })]),style={"width": "36rem", 
                                       "border": "0",
                                        #"height": "10px",
                                       "background-color": "#9cd9e0",
@@ -1108,52 +1028,221 @@ card_econom4 = dbc.Card(
                          'margin-top': '-32px',
                          'margin-bottom': '30px',
 
-                         })]),style={"width": "40rem", 
+                         })]),style={"width": "36rem", 
                                       "border": "0",
                                        #"height": "10px",
                                       "background-color": "#0097A7",
                                     },)
+
+card_economia = dbc.Card(
+    dbc.CardBody(
+        [
+            html.P([dbc.Button([html.H1(className="fas fa-hand-holding-usd",
+                                style={'textAlign': 'left',
+                                       "color":"#0097A7",
+                                      "font-size": "80px"}),
+            "  Variables de economía"], 
+                    style={'textAlign': 'left',"color":"#0097A7",
+                   "font-size": "30px",
+                          })],),
+            dbc.Card(card_econom1),
+            html.Br(),
+            dbc.Card(card_econom2),
+            html.Br(),
+            dbc.Card(card_econom3),
+            html.Br(),
+            dbc.Card(card_econom4),
+        ],style={"width": "38rem", }))
+            
+
+    
+    
+    
+    
+    
+    
+card_economia_discap = dbc.Card(
+    dbc.CardBody(
+        [
+            html.H6("No económicamente activa con limitación física o mental", 
+                    style={'textAlign': 'left',
+                           "color": "white",
+                           "background-color": "#BA68C8"}),
+            html.H3("112,842", style={'textAlign': 'left',
+                                      "color": "white",
+                                      "background-color": "#BA68C8"}),
+            html.Br(),
+            html.Br(),
+            
+            dbc.ButtonGroup(html.Span([
+                html.H1(className="fas fa-wheelchair", 
+                        style={"background-color": "#BA68C8",
+                               "color":"white",
+                               "font-size": "110px",
+                              #'size':'80px',
+                              'textAlign': 'center',
+                               #'margin-left':'10px'
+                              }),]),),
+            html.Br(),
+            html.Br(),
+            
+            html.H2("2%", 
+                  style={'textAlign': 'center',
+                         "color": "white",
+                            #"height": "7px",
+                         "font-size": "40px",
+                         #'margin-top': '-32px',
+                         #'margin-bottom': '30px',
+                         "background-color": "#BA68C8"}),]),
+    style={"width": "13rem", 
+          "border": "0",
+          "background-color": "#BA68C8",
+           'color':'#BA68C8',
+           "height": "550px",
+          })
 
 
 ##########################################################################
 #Seccion 11. Variables de RELIGION
 ##########################################################################
 
-row1 = html.Tr([
-                dbc.Alert([#html.P(className="fas fa-male", style={"color": "#D500F9"}),
-                           "    Religión católica"], color="warning"), 
-                html.Td("16,123,123"),#,style={'textAlign': 'bottom'}),
-                dbc.Alert("85%", 
-                        style={'textAlign': 'center',
-                         "color": "black",  
-                         "font-size": "30px",
-                         "font-weight": 'bold', })])
 
-row2 = html.Tr([dbc.Alert([#html.P(className="fas fa-male", style={"color": "#D500F9"}),
-                           "    Población derechohabiente del Seguro Popular o Seguro Médico para una Nueva Generación"], color="warning"), 
-                html.Td("2,088,735"),
-                html.Td("31%",
-                        style={'textAlign': 'center',
-                         "color": "black",  
-                         "font-size": "30px",
-                         "font-weight": 'bold',})])
-table_body = [html.Tbody([row1, row2, ])]
-
-
-
-
-#################################### card_v_religion
- 
-           
-card_v_religion    = dbc.Card(
+card_religion1 = dbc.Card(
     dbc.CardBody(
         [
-            html.H6("Variables", 
-                    className="card-title",
-                    style={'textAlign': 'left',"color": "gray"}),
-            html.H2("de religión", 
-                    className="card-subtitle",
-                    style={'textAlign': 'left',"color": "black", "font-weight": 'bold'}),
+            html.H6("Religión católica", 
+                    style={'textAlign': 'left',
+                           "color": "white",
+                            "height": "7px",
+                          "background-color": "#9cd9e0"}),
+            html.H5("13,660,403", 
+                    style={'textAlign': 'left',
+                            "height": "7px",
+                           "color": "white",
+                          "background-color": "#9cd9e0"}),
+            html.H2("64%", 
+                  style={'textAlign': 'right',
+                         "color": "white",
+                         "height": "7px",
+                         "font-size": "38px",
+                         'margin-top': '-32px',
+                         'margin-bottom': '30px',
+
+                         })]), 
+                            style={"width": "48rem", 
+                                      "border": "0",
+                                       #"height": "10px",
+                                      "background-color": "#9cd9e0",
+                                  },)
+
+card_religion2 = dbc.Card(
+    dbc.CardBody(
+        [
+            html.H6("Protestantes, Evangélicas y diferentes de Evangélicas", 
+                    style={'textAlign': 'left',
+                           "color": "white",
+                            "height": "7px",
+                          "background-color": "#0097A7"}),
+            html.H5("13,660,403", 
+                    style={'textAlign': 'left',
+                            "height": "7px",
+                           "color": "white",
+                          "background-color": "#0097A7"}),
+            html.H2("64%", 
+                  style={'textAlign': 'right',
+                         "color": "white",
+                         "height": "7px",
+                         "font-size": "38px",
+                         'margin-top': '-32px',
+                         'margin-bottom': '30px',
+
+                         })]), 
+                            style={"width": "48rem", 
+                                      "border": "0",
+                                       #"height": "10px",
+                                      "background-color": "#0097A7",
+                                  },)
+
+
+
+
+
+#########
+card_v_religionAA = dbc.Card(
+    dbc.CardBody(
+        [
+            html.P([dbc.Button([html.H1(className="fas fa-church",
+                                style={'textAlign': 'left',
+                                       "color":"#0097A7",
+                                      "font-size": "80px"}),
+            "  Variables de Religion"], 
+                    style={'textAlign': 'left',"color":"#0097A7",
+                   "font-size": "30px",
+                          })]),
+            
+            dbc.Card(card_religion1),
+            html.Br(),
+            dbc.Card(card_religion2),
+            
+        ]),
+    style={"width": "50rem", 
+           "border": "0",
+           "fill" : "orange"},
+)
+
+
+
+
+
+
+##########################################################################
+#Seccion 6 Variables de EDUCACION
+##########################################################################
+
+
+row1edu = html.Tr([dbc.Alert("De 15 años y más alfabeta", color="#E0E0E0",), 
+                html.Td("172,575"),
+                dbc.Alert("4%", color="light",
+                        style={"font-size": "35px",
+                        "font-weight": 'bold',
+                        "color": "#81C784",       
+                        })])
+
+
+row2edu = html.Tr([dbc.Alert("De 15 años y más con educación básica completa", color="#E0E0E0",), 
+                html.Td("19,172,575"),
+                dbc.Alert("59%", color="light",
+                        style={"font-size": "35px",
+                        "font-weight": 'bold',
+                        "color": "#81C784",       
+                        })])
+
+row3edu = html.Tr([dbc.Alert("De 15 años y más analfabeta", color="#E0E0E0",), 
+                html.Td("19,172,575"),
+                dbc.Alert("59%", color="light",
+                        style={"font-size": "35px",
+                        "font-weight": 'bold',
+                        "color": "#81C784",       
+                        })])
+
+table_body = [html.Tbody([row1edu, row2edu, row3edu])]
+
+
+
+#################################### card_v_edu
+
+           
+card_v_edu = dbc.Card(
+    dbc.CardBody(
+        [
+         html.P([dbc.Button([html.H1(className="fas fa-book-reader",
+                                style={'textAlign': 'left',
+                                       "color":"#81C784",
+                                      "font-size": "80px"}),
+            "  Variables de educación"], 
+                    style={'textAlign': 'left',"color":"#81C784",
+                   "font-size": "30px",
+                          })]),
             
      dbc.Table( table_body, bordered=False)
                     ]),
@@ -1162,13 +1251,9 @@ card_v_religion    = dbc.Card(
     style={"width": "50rem", 
           "border": "0",
           "fill" : "orange"},
-)    
-
-
-
-
-
-########################################################################
+)
+  
+    ########################################################################
 # A P P 
 ########################################################################
 
@@ -1182,6 +1267,37 @@ app = dash.Dash(__name__, external_stylesheets=[dbc.themes.
                                                 LUX, FONT_AWESOME], server=server)
 
 body = html.Div([
+     html.Br(),
+       html.Br(),
+       html.Br(),
+    dbc.Row(
+           [
+               dbc.Col(dbc.CardImg(src="https://github.com/fdealbam/CamaraDiputados/blob/main/application/static/logocamara.jfif?raw=true",
+                        ),width ={ "size": 1,  "offset": 1}),
+               dbc.Col(html.H1("Reporte estadístico básico de "
+                               "Zonas Metropolitanas",
+                        style={'offset' : 2, 
+                              "font-size": "35px",
+                              "color": "dark",
+                              'textAlign': 'center',
+                               #"font-weight": 'bold',
+                               "font-family": "Montserrat"
+                              })),
+           ]),
+
+#Cintillo 00    
+    dbc.Row(
+           [
+               dbc.Col(html.H6(d2),           #Fecha de actualización
+               width={'size' : "auto",
+                      'offset' : 4}), 
+               dbc.Col(html.H6("Fuente: ----"),
+                        width={'size': 3,  "offset":1 }),
+            ]),
+               
+       html.Br(),
+       html.Br(),
+    
 
     html.Br(),
     html.Br(),
@@ -1206,8 +1322,8 @@ body = html.Div([
                        'width': '382px',
                        'height': '379px',})
     ]),
-
-     dbc.Row([
+    
+    dbc.Row([
        dbc.Col(dbc.Card(card22),#cuadros azules
                style={'margin-top': '-593px', #arriba
                       'margin-left': '467px', 
@@ -1284,32 +1400,40 @@ body = html.Div([
 
     
     ################## SECCION 5 (pag1)__VARIABLES DE MIGRACION
-     dbc.Row(
-           [
-               dbc.Col(html.H5(["Variables ", 
-                       html.H1("de migración", )]),
-                        width={'size': 8,  "offset":1 }),
-            ]),
+     
     dbc.Row([
-        dbc.Col(dbc.Card(cardmigra),
-         sm={'size': 7, "offset": 1, }),
-     ], no_gutters= True, justify= "start",
-     className="blockquote"
-     ),
-    dbc.Row([
-        dbc.Col(dbc.Card(cardmigra2),
-         sm={'size': 7, "offset": 1, }),
-         
-     ], no_gutters= True, justify= "start",
-     className="blockquote",
-     ),
-    dbc.Row([
-        dbc.Col(dbc.Card(cardmigra3),
-         sm={'size': 7, "offset": 1, }),
-         
-     ], no_gutters= True, justify= "start",
-     className="blockquote",
-     ),
+        dbc.Col(dbc.Card(card_migracion), #cuadros azules
+                sm={ 'size': 6, "offset": 1, }),
+                 ], no_gutters= True, justify= "start",
+                 className="blockquote"),
+#    
+#    
+#    dbc.Row(
+#           [
+#               dbc.Col(html.H5(["Variables ", 
+#                       html.H1("de migración", )]),
+#                        width={'size': 8,  "offset":1 }),
+#            ]),
+#    dbc.Row([
+#        dbc.Col(dbc.Card(cardmigra),
+#         sm={'size': 7, "offset": 1, }),
+#     ], no_gutters= True, justify= "start",
+#     className="blockquote"
+#     ),
+#    dbc.Row([
+#        dbc.Col(dbc.Card(cardmigra2),
+#         sm={'size': 7, "offset": 1, }),
+#         
+#     ], no_gutters= True, justify= "start",
+#     className="blockquote",
+#     ),
+#    dbc.Row([
+#        dbc.Col(dbc.Card(cardmigra3),
+#         sm={'size': 7, "offset": 1, }),
+#         
+#     ], no_gutters= True, justify= "start",
+#     className="blockquote",
+#     ),
 
     
     
@@ -1320,7 +1444,7 @@ body = html.Div([
         dbc.Col(dbc.Card(card_v_discapacidad, #color="#FBFBFB", outline=True,
                          #inverse=False
                         ),
-         sm={"size": 9,  "offset": 1, }),
+         sm={"offset": 1, }),
          
      ], no_gutters= True, justify= "start",
      className="blockquote",
@@ -1329,60 +1453,104 @@ body = html.Div([
     
     ################## SECCION 2 (pag 2)__VARIABLES DE ECONOMIA
 
-dbc.Row(
-           [
-               dbc.Col(html.H5(["Variables ", 
-                       html.H1("de economía", )]),
-                        width={'size': 8,  "offset":1 }),
-            ]),
-    
-    dbc.Row([
-        dbc.Col(dbc.Card(card_econom1), #cuadros azules
-                sm={'size': 7, "offset": 1, }),
-                 ], no_gutters= True, justify= "start",
-                 className="blockquote"),
-
-    dbc.Row([
-       dbc.Col(dbc.Card(card_econom2),#cuadros azules
-                sm={'size': 7, "offset": 1, }),
-                 ], no_gutters= True, justify= "start",
-                 className="blockquote"),
-
-    dbc.Row([
-        dbc.Col(dbc.Card(card_econom3),#cuadros azules
-                sm={'size': 7, "offset": 1, }),
-                 ], no_gutters= True, justify= "start",
-                 className="blockquote"),
-
-     dbc.Row([
-       dbc.Col(dbc.Card(card_econom4),#cuadros azules
-                sm={'size': 7, "offset": 1, }),
-                 ], no_gutters= True, justify= "start",
-                 className="blockquote"),
-             
-    
-    
-    
-    #   dbc.Row(
- #    [
- #       dbc.Col(dbc.Card(card_v_economia, #color="#FBFBFB", outline=True,
- #                        #inverse=False
- #                       ),
- #        sm={"size": 9,  "offset": 1, }),
- #        
- #        
- #    ], no_gutters= True, justify= "start",
- #    className="blockquote",
- #    ),
+#    dbc.Row(
+#           [
+#            html.P([dbc.Button([html.H1(className="far fa-money-bill-alt",
+#                                style={'textAlign': 'left',
+#                                       "color":"#8a2be2",
+#                                      "font-size": "80px"}),
+#            "  Variables de economía"], 
+#                    style={'textAlign': 'left',"color":"#8a2be2",
+#                   "font-size": "40px",
+#                           
+#                          }),
+#                   ])],style={'size': 7, "offset": 1, }),
 #
+#    dbc.Row([
+#        dbc.Col(dbc.Card(card_economtitle), #cuadros azules
+#                sm={'size': 11, "offset": 1, }),
+#                 ], no_gutters= True, justify= "start",
+#                 className="blockquote"),
+#    
+#    dbc.Row([
+#        dbc.Col(dbc.Card(card_econom1), #cuadros azules
+#                sm={'size': 7, "offset": 1, }),
+#                 ], no_gutters= True, justify= "start",
+#                 className="blockquote"),
+#
+#    dbc.Row([
+#       dbc.Col(dbc.Card(card_econom2),#cuadros azules
+#                sm={'size': 7, "offset": 1, }),
+#                 ], no_gutters= True, justify= "start",
+#                 className="blockquote"),
+#
+#    dbc.Row([
+#        dbc.Col(dbc.Card(card_econom3),#cuadros azules
+#                sm={'size': 7, "offset": 1, }),
+#                 ], no_gutters= True, justify= "start",
+#                 className="blockquote"),
+#
+#     dbc.Row([
+#       dbc.Col(dbc.Card(card_econom4),#cuadros azules
+#                sm={'size': 7, "offset": 1, }),
+#                 ], no_gutters= True, justify= "start",
+#                 className="blockquote"),
+    
+    dbc.Row([
+        dbc.Col(dbc.Card(card_economia), sm={  "offset": 1, }),#Variables Vivienda
+        dbc.Col(dbc.Card(card_economia_discap),                      #población total
+               style={#'margin-top': '-540px',       #arriba
+                      'margin-left': '40px',
+                   "color":"#BA68C8"
+               #       'width': '479px',
+               #       'height': '100%',
+               }, sm={  "offset": 1, })
+     ],  no_gutters= True, justify= "start",
+     className="blockquote"),
+    
+    #<<<<<<<<<
+    #dbc.Row([
+    #    dbc.Col(dbc.Card(card_economia), #cuadros azules
+    #            sm={'size':6,"offset": 1, }),
+    #             ], no_gutters= True, justify= "start",
+    #             className="blockquote"),
+    #
+    ###<<<<<<
     
     ################## SECCION 3 (pag 2)__VARIABLES DE RELIGION
+   
+    
+    #dbc.Row([
+    #    dbc.Col(dbc.Card(card_v_religion, #color="#FBFBFB", outline=True,
+    #                     #inverse=False
+    #                    ),
+    #     sm={"size": 9,  "offset": 1, }),
+    # ], no_gutters= True, justify= "start",
+    # className="blockquote",
+    # ),
+    #
+    # dbc.Row([
+    #    dbc.Col(dbc.Card(card_religion1), #cuadros azules
+    #            style={'margin-top': '0px', #arriba
+    #                   'margin-left': '100px', 
+    #                   'width': '382px',
+    #                   'height': '379px',})
+    #    ]),
+#
+    # dbc.Row([
+    #   dbc.Col(dbc.Card(card_religion2),#cuadros azules
+    #           style={'margin-top': '-295px', #arriba
+    #                  'margin-left': '100px', 
+    #                  'width': '382px',
+    #                  'height': '379px',}),
+    #    ]),
+    
+
+    # ejemplo card in card
     dbc.Row([
-        dbc.Col(dbc.Card(card_v_religion, #color="#FBFBFB", outline=True,
-                         #inverse=False
-                        ),
-         sm={"size": 9,  "offset": 1, }),
-     ], no_gutters= True, justify= "start",
+        dbc.Col(dbc.Card(card_v_religionAA),
+                sm={  "offset": 1, }),
+    ], no_gutters= True, justify= "start",
      className="blockquote",
      ),
     
@@ -1405,10 +1573,9 @@ dbc.Row(
         dbc.Col(dbc.Card(card_v_derechohab, #color="#FBFBFB", outline=True,
                          #inverse=False
                         ),
-         sm={  "offset": 1, }),
+         sm={ "offset": 1, }),
      ], no_gutters= True, justify= "start",
-     className="blockquote",
-     ),
+     className="blockquote",),
     
     ################## SECCION 3 (3a pag)__VARIABLES DE HOGARES CENSALES 
     dbc.Row([
@@ -1417,15 +1584,24 @@ dbc.Row(
                         ),
          sm={  "offset": 1, }),
      ], no_gutters= True, justify= "start",
-     className="blockquote",
-     ),
+     className="blockquote",),
+     dbc.Row([
+                                    #https://github.com/fdealbam/CamaraDiputados/blob/b11ef31e8e0f73e1a4a06ce60402563e1bd0122e/application/static/logocamara.jfif
+           dbc.Col(dbc.CardImg(src="https://github.com/fdealbam/CamaraDiputados/blob/main/application/static/logocamara.jfif?raw=true"),
+                        width=4, lg={'size': 1,  "offset": 3, }),
+            
+           dbc.Col(html.H6(" S e c r e t a r í a   G e n e r a l," 
+                           " Secretaría de Servicios Parlamentarios, "
+                           " México, 2021 "),
+                  width={'size': 3, 'offset': 0}),
+               ], justify="start",),
+        
+            ])
     
-         ])
-    
+
 app.layout = html.Div([body])
 #app.layout = html.Div(children=[html.Img(className='icon')])
 
 if __name__ == '__main__':
     app.run_server(use_reloader = False)
-
-
+    
