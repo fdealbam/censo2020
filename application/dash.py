@@ -518,6 +518,7 @@ card3 = dbc.Card(
             "  Variables de Vivienda"], 
                     style={'textAlign': 'left',"color":"#FBC02D",
                    "font-size": "30px",
+                           'margin-bottom':'-30px'
                           })]),
             
      dbc.Table( table_body, bordered=False)
@@ -864,6 +865,7 @@ card_v_hog_cens = dbc.Card(
             "  Variables de hogares censales"], 
                     style={'textAlign': 'left',"color":"#F48FB1",
                    "font-size": "30px",
+                           'margin-bottom':'-30px'
                           })]),            
             
             
@@ -912,6 +914,7 @@ card_v_discapacidad = dbc.Card(
             "  Variables de Discapacidad"], 
                     style={'textAlign': 'left',"color":"#BA68C8",
                    "font-size": "30px",
+                           'margin-bottom':'-30px'
                           })]),
             
      dbc.Table( table_body, bordered=False)
@@ -1249,6 +1252,7 @@ card_v_edu = dbc.Card(
             "  Variables de educación"], 
                     style={'textAlign': 'left',"color":"#81C784",
                    "font-size": "30px",
+                           'margin-bottom':'-30px'
                           })]),
             
      dbc.Table( table_body, bordered=False)
