@@ -241,6 +241,8 @@ card2 = dbc.Card(
     
     style={"width": "25.5rem", 
           "border": "0",
+          "margin-left": "-4px",
+           
           "background-color": "orange"
           },
 )
@@ -272,7 +274,7 @@ card21 = dbc.Card(
                          })]), 
                             style={"width": "25.5rem", 
                                    "border": "0",
-                                   #"height": "10px",
+                         "margin-left": "40px",
                                    "background-color": "#0097A7",
                                   },)
 
@@ -300,7 +302,7 @@ card22 = dbc.Card(
                          })]), 
                             style={"width": "25.5rem", 
                                       "border": "0",
-                                       #"height": "10px",
+                         "margin-left": "40px",
                                       "background-color": "#0097A7",
                                   },)
 
@@ -328,7 +330,7 @@ card23 = dbc.Card(
                          })]), 
                             style={"width": "25.5rem", 
                                       "border": "0",
-                                       #"height": "10px",
+                         "margin-left": "40px",
                                       "background-color": "#0097A7",
                                   },),
 
@@ -356,7 +358,7 @@ card24 = dbc.Card(
                          })]), 
                             style={"width": "25.5rem", 
                                       "border": "0",
-                                       #"height": "10px",
+                         "margin-left": "40px",
                                       "background-color": "#0097A7",
                                   },)
 
@@ -384,7 +386,7 @@ card25 = dbc.Card(
                          })]), 
                             style={"width": "25.5rem", 
                                       "border": "0",
-                                       #"height": "10px",
+                         "margin-left": "40px",
                                       "background-color": "#0097A7",
                                   },)
 
@@ -412,7 +414,7 @@ card26 = dbc.Card(
                          })]), 
                             style={"width": "25.5rem", 
                                       "border": "0",
-                                       #"height": "10px",
+                                     "margin-left": "40px",
                                       "background-color": "#0097A7",
                                   },)
 
@@ -439,7 +441,8 @@ card27 = dbc.Card(
 
                          })]), 
                             style={"width": "25.5rem", 
-                                      "border": "0",
+                                   "border": "0px",
+                                   "margin-left": "40px",
                                        #"height": "10px",
                                       "background-color": "#0097A7",
                                   },)
@@ -527,7 +530,9 @@ card3 = dbc.Card(
     
     style={"width": "50rem", 
           "border": "0",
-          "fill" : "orange"},
+           "margin-left": "40px",
+           "margin-top": "-40px",
+           "fill" : "orange"},
 )
 
 
@@ -1652,4 +1657,6 @@ app.layout = html.Div([body])
 
 if __name__ == '__main__':
     app.run_server(use_reloader = False)
+    
+
     
