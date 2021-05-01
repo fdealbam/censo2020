@@ -442,7 +442,7 @@ card27 = dbc.Card(
                          })]), 
                             style={"width": "25.5rem", 
                                    "border": "0px",
-                                   "margin-left": "40px",
+                                   "margin-left": "30px",
                                        #"height": "10px",
                                       "background-color": "#0097A7",
                                   },)
@@ -1659,4 +1659,3 @@ if __name__ == '__main__':
     app.run_server(use_reloader = False)
     
 
-    
